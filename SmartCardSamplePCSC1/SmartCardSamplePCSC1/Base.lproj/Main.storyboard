@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tactivo Toolkit Smart Card Sample-->
+        <!--Toolkit sample PCSC1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tactivo Toolkit Smart Card Sample" id="9G9-zI-kyb"/>
+                    <navigationItem key="navigationItem" title="Toolkit sample PCSC1" id="9G9-zI-kyb"/>
                     <connections>
                         <outlet property="accessoryStatusLabel" destination="i8L-dx-XCl" id="a8k-OL-xql"/>
                         <outlet property="cardStatusLabel" destination="icg-0M-702" id="AXY-F4-paf"/>
