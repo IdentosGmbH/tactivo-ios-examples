@@ -35,3 +35,7 @@ xcuserdata/
 
 
 # End of https://www.gitignore.io/api/xcode
+
+# Exclude library files that come with the Toolkit
+lib/*.a
+include/*.h
