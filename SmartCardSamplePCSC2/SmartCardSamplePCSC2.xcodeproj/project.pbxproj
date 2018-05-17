@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31AEA56020A052C400B818C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AEA55F20A052C400B818C6 /* AppDelegate.m */; };
+		31AEA56320A052C400B818C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AEA56220A052C400B818C6 /* ViewController.m */; };
+		31AEA56620A052C400B818C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AEA56420A052C400B818C6 /* Main.storyboard */; };
+		31AEA56820A052C500B818C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31AEA56720A052C500B818C6 /* Assets.xcassets */; };
+		31AEA56B20A052C500B818C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AEA56920A052C500B818C6 /* LaunchScreen.storyboard */; };
+		31AEA56E20A052C500B818C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AEA56D20A052C500B818C6 /* main.m */; };
+		31AEA58720A059FB00B818C6 /* ADD_HEADERS_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31AEA57520A059FA00B818C6 /* ADD_HEADERS_HERE.txt */; };
+		31AEA58820A059FB00B818C6 /* ADD_LIBRARY_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31AEA58520A059FB00B818C6 /* ADD_LIBRARY_HERE.txt */; };
+		31AEA58920A059FB00B818C6 /* libiOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AEA58620A059FB00B818C6 /* libiOSLibrary.a */; };
+		31AEA58C20A05BA300B818C6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AEA58B20A05BA300B818C6 /* AudioToolbox.framework */; };
+		31AEA58F20A064E000B818C6 /* PBSmartCardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AEA58E20A064E000B818C6 /* PBSmartCardUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31AEA55B20A052C400B818C6 /* SmartCardSamplePCSC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCardSamplePCSC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31AEA55E20A052C400B818C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		31AEA55F20A052C400B818C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		31AEA56120A052C400B818C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		31AEA56220A052C400B818C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		31AEA56520A052C400B818C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31AEA56720A052C500B818C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31AEA56A20A052C500B818C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31AEA56C20A052C500B818C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31AEA56D20A052C500B818C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31AEA57520A059FA00B818C6 /* ADD_HEADERS_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_HEADERS_HERE.txt; sourceTree = "<group>"; };
+		31AEA57620A059FA00B818C6 /* PBBiometryTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryTemplate.h; sourceTree = "<group>"; };
+		31AEA57720A059FA00B818C6 /* PBBiometryVerifyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifyConfig.h; sourceTree = "<group>"; };
+		31AEA57820A059FA00B818C6 /* PBLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLibrary.h; sourceTree = "<group>"; };
+		31AEA57920A059FA00B818C6 /* PBBiometryFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryFinger.h; sourceTree = "<group>"; };
+		31AEA57A20A059FA00B818C6 /* PBAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBAccessory.h; sourceTree = "<group>"; };
+		31AEA57B20A059FA00B818C6 /* PBBiometryDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryDatabase.h; sourceTree = "<group>"; };
+		31AEA57C20A059FA00B818C6 /* PBBiometryVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifier.h; sourceTree = "<group>"; };
+		31AEA57D20A059FA00B818C6 /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
+		31AEA57E20A059FA00B818C6 /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
+		31AEA57F20A059FA00B818C6 /* PBBiometryUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryUser.h; sourceTree = "<group>"; };
+		31AEA58020A059FA00B818C6 /* PBBiometryGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryGUI.h; sourceTree = "<group>"; };
+		31AEA58120A059FA00B818C6 /* PBBiometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometry.h; sourceTree = "<group>"; };
+		31AEA58220A059FA00B818C6 /* PBSmartcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcard.h; sourceTree = "<group>"; };
+		31AEA58320A059FA00B818C6 /* PBBiometryEnrollConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryEnrollConfig.h; sourceTree = "<group>"; };
+		31AEA58520A059FB00B818C6 /* ADD_LIBRARY_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_LIBRARY_HERE.txt; sourceTree = "<group>"; };
+		31AEA58620A059FB00B818C6 /* libiOSLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiOSLibrary.a; sourceTree = "<group>"; };
+		31AEA58B20A05BA300B818C6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		31AEA58D20A064E000B818C6 /* PBSmartCardUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartCardUtils.h; sourceTree = "<group>"; };
+		31AEA58E20A064E000B818C6 /* PBSmartCardUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSmartCardUtils.m; sourceTree = "<group>"; };
+		31AEA59020A067AC00B818C6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		31AEA59220A067EC00B818C6 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31AEA55820A052C400B818C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AEA58C20A05BA300B818C6 /* AudioToolbox.framework in Frameworks */,
+				31AEA58920A059FB00B818C6 /* libiOSLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31AEA55220A052C400B818C6 = {
+			isa = PBXGroup;
+			children = (
+				31AEA57420A059FA00B818C6 /* include */,
+				31AEA58420A059FB00B818C6 /* lib */,
+				31AEA55D20A052C400B818C6 /* SmartCardSamplePCSC2 */,
+				31AEA55C20A052C400B818C6 /* Products */,
+				31AEA58A20A05BA300B818C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31AEA55C20A052C400B818C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31AEA55B20A052C400B818C6 /* SmartCardSamplePCSC2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31AEA55D20A052C400B818C6 /* SmartCardSamplePCSC2 */ = {
+			isa = PBXGroup;
+			children = (
+				31AEA55E20A052C400B818C6 /* AppDelegate.h */,
+				31AEA55F20A052C400B818C6 /* AppDelegate.m */,
+				31AEA56720A052C500B818C6 /* Assets.xcassets */,
+				31AEA56C20A052C500B818C6 /* Info.plist */,
+				31AEA56920A052C500B818C6 /* LaunchScreen.storyboard */,
+				31AEA56D20A052C500B818C6 /* main.m */,
+				31AEA56420A052C400B818C6 /* Main.storyboard */,
+				31AEA58D20A064E000B818C6 /* PBSmartCardUtils.h */,
+				31AEA58E20A064E000B818C6 /* PBSmartCardUtils.m */,
+				31AEA56120A052C400B818C6 /* ViewController.h */,
+				31AEA56220A052C400B818C6 /* ViewController.m */,
+			);
+			path = SmartCardSamplePCSC2;
+			sourceTree = "<group>";
+		};
+		31AEA57420A059FA00B818C6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				31AEA57520A059FA00B818C6 /* ADD_HEADERS_HERE.txt */,
+				31AEA57620A059FA00B818C6 /* PBBiometryTemplate.h */,
+				31AEA57720A059FA00B818C6 /* PBBiometryVerifyConfig.h */,
+				31AEA57820A059FA00B818C6 /* PBLibrary.h */,
+				31AEA57920A059FA00B818C6 /* PBBiometryFinger.h */,
+				31AEA57A20A059FA00B818C6 /* PBAccessory.h */,
+				31AEA57B20A059FA00B818C6 /* PBBiometryDatabase.h */,
+				31AEA57C20A059FA00B818C6 /* PBBiometryVerifier.h */,
+				31AEA57D20A059FA00B818C6 /* wintypes.h */,
+				31AEA57E20A059FA00B818C6 /* winscard.h */,
+				31AEA57F20A059FA00B818C6 /* PBBiometryUser.h */,
+				31AEA58020A059FA00B818C6 /* PBBiometryGUI.h */,
+				31AEA58120A059FA00B818C6 /* PBBiometry.h */,
+				31AEA58220A059FA00B818C6 /* PBSmartcard.h */,
+				31AEA58320A059FA00B818C6 /* PBBiometryEnrollConfig.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		31AEA58420A059FB00B818C6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				31AEA58520A059FB00B818C6 /* ADD_LIBRARY_HERE.txt */,
+				31AEA58620A059FB00B818C6 /* libiOSLibrary.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		31AEA58A20A05BA300B818C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31AEA59220A067EC00B818C6 /* UserNotifications.framework */,
+				31AEA59020A067AC00B818C6 /* NotificationCenter.framework */,
+				31AEA58B20A05BA300B818C6 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31AEA55A20A052C400B818C6 /* SmartCardSamplePCSC2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31AEA57120A052C500B818C6 /* Build configuration list for PBXNativeTarget "SmartCardSamplePCSC2" */;
+			buildPhases = (
+				31AEA55720A052C400B818C6 /* Sources */,
+				31AEA55820A052C400B818C6 /* Frameworks */,
+				31AEA55920A052C400B818C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartCardSamplePCSC2;
+			productName = SmartCardSamplePCSC2;
+			productReference = 31AEA55B20A052C400B818C6 /* SmartCardSamplePCSC2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31AEA55320A052C400B818C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Identos GmbH";
+				TargetAttributes = {
+					31AEA55A20A052C400B818C6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 31AEA55620A052C400B818C6 /* Build configuration list for PBXProject "SmartCardSamplePCSC2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31AEA55220A052C400B818C6;
+			productRefGroup = 31AEA55C20A052C400B818C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31AEA55A20A052C400B818C6 /* SmartCardSamplePCSC2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31AEA55920A052C400B818C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AEA58820A059FB00B818C6 /* ADD_LIBRARY_HERE.txt in Resources */,
+				31AEA56B20A052C500B818C6 /* LaunchScreen.storyboard in Resources */,
+				31AEA58720A059FB00B818C6 /* ADD_HEADERS_HERE.txt in Resources */,
+				31AEA56820A052C500B818C6 /* Assets.xcassets in Resources */,
+				31AEA56620A052C400B818C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31AEA55720A052C400B818C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31AEA56320A052C400B818C6 /* ViewController.m in Sources */,
+				31AEA58F20A064E000B818C6 /* PBSmartCardUtils.m in Sources */,
+				31AEA56E20A052C500B818C6 /* main.m in Sources */,
+				31AEA56020A052C400B818C6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31AEA56420A052C400B818C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31AEA56520A052C400B818C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31AEA56920A052C500B818C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31AEA56A20A052C500B818C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31AEA56F20A052C500B818C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		31AEA57020A052C500B818C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31AEA57220A052C500B818C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = SmartCardSamplePCSC2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.SmartCardSamplePCSC2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31AEA57320A052C500B818C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = SmartCardSamplePCSC2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.SmartCardSamplePCSC2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31AEA55620A052C400B818C6 /* Build configuration list for PBXProject "SmartCardSamplePCSC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AEA56F20A052C500B818C6 /* Debug */,
+				31AEA57020A052C500B818C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31AEA57120A052C500B818C6 /* Build configuration list for PBXNativeTarget "SmartCardSamplePCSC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31AEA57220A052C500B818C6 /* Debug */,
+				31AEA57320A052C500B818C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31AEA55320A052C400B818C6 /* Project object */;
+}
