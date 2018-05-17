@@ -116,12 +116,11 @@ static SCARDCONTEXT globalContext;
     
     errorText = [[NSMutableString alloc]initWithString:@""];
     
-    // Initialize the framework
+    // Initialize the framework.
     status = SCardEstablishContext(SCARD_SCOPE_SYSTEM, NULL, NULL, &context);
     NSLog(@"SCardEstablishContext 0x%08x", status);
     
-    if (status != SCARD_S_SUCCESS)
-    {
+    if (status != SCARD_S_SUCCESS) {
         [self printCardStatus:@"SCardEstablishContext failed"];
         [self printData:[PBSmartCardUtils errorMessageFrom:[NSNumber numberWithUnsignedInt:status]]];
         goto finalize;
@@ -134,19 +133,14 @@ static SCARDCONTEXT globalContext;
     bool firstRun = true;
     
 start: {
-    
-    if([cardThread isCancelled])
-    {
+    if([cardThread isCancelled]) {
         goto finalize;
     }
     
-    if(firstRun)
-    {
+    if(firstRun) {
         firstRun = false;
-    }
-    else
-    {
-        // wait for a Tactivo to be connected
+    } else {
+        // Wait for a Tactivo to be connected.
         [trigger wait];
     }
     
@@ -159,205 +153,146 @@ start: {
     status = SCardListReaders(context, NULL, (LPSTR)&readerList, &readerListLength);
     NSLog(@"SCardListReaders 0x%08x", status);
     
-    if(status ==  SCARD_E_NO_READERS_AVAILABLE)
-    {
+    if(status ==  SCARD_E_NO_READERS_AVAILABLE) {
         [self printCardStatus:@"Connect reader..."];
         goto start;
-    }
-    else if(status != SCARD_S_SUCCESS)
-    {
+    } else if(status != SCARD_S_SUCCESS) {
         [errorText setString:@"SCardListReaders failed"];
         goto cleanup;
     }
 }
     
 again: {
-    
-    // set the current state to unaware to make the initial call to SCardGetStatusChange return immediately - this allows us to get the current state.
+    // Set the current state to unaware to make the initial call to SCardGetStatusChange return immediately - this allows us to get the current state.
     readerState.dwCurrentState = SCARD_STATE_UNAWARE;
     
-    // use the first found reader
+    // Use the first found reader.
     readerState.szReader = readerList;
     
-    // get the current state of the reader.
+    // Get the current state of the reader.
     status = SCardGetStatusChange(context, INFINITE, &readerState, 1);
     NSLog(@"SCardGetStatusChange 0x%08x", status);
     
-    if (status != SCARD_S_SUCCESS)
-    {
+    if (status != SCARD_S_SUCCESS) {
         [errorText setString:@"SCardGetStatusChange failed"];
         goto cleanup;
     }
     
-    // update the current state with the event state
     readerState.dwCurrentState = readerState.dwEventState;
     
-    // wait until a card is inserted or an error occur
-    while((readerState.dwCurrentState & SCARD_STATE_PRESENT) == FALSE)
-    {
+    // Wait until a card is inserted or an error occurs.
+    while((readerState.dwCurrentState & SCARD_STATE_PRESENT) == FALSE) {
         [self printCardStatus:@"Insert smart card..."];
         
-        // wait for the state to change
-        status = SCardGetStatusChange(context,
-                                      INFINITE,
-                                      &readerState,
-                                      1);
+        // Wait for the state to change.
+        status = SCardGetStatusChange(context, INFINITE, &readerState, 1);
         
         NSLog(@"SCardGetStatusChange 0x%08x", status);
         
-        if (status == SCARD_E_TIMEOUT || status == SCARD_E_READER_UNAVAILABLE)
-        {
-            /*
-             This is not considered an error.
-             SCardGetStatusChange can return SCARD_E_READER_UNAVAILABLE if called just as iOS
-             decides to end the underlying EASession. The app need to be aware that this
-             situation can happen and more frequently than unplugging the USB cable of a smart
-             card reader on a PC/Mac.
-             In this example we just continue the loop as usual.
-             */
-        }
-        else if (status != SCARD_S_SUCCESS)
-        {
+        if (status == SCARD_E_TIMEOUT || status == SCARD_E_READER_UNAVAILABLE) {
+            // This is not considered an error. SCardGetStatusChange can return SCARD_E_READER_UNAVAILABLE if called just as iOS decides to end the underlying EASession. The app need to be aware that this situation can happen and more frequently than unplugging the USB cable of a smart card reader on a PC/Mac. In this example we just continue the loop as usual.
+        } else if (status != SCARD_S_SUCCESS) {
             [errorText setString:@"SCardGetStatusChange failed"];
             goto cleanup;
-        }
-        else // SCARD_S_SUCCESS
-        {
-            // update the current state with the event state to allow us to exit the loop.
+        } else {
+            // Update the current state with the event state to allow us to exit the loop.
             readerState.dwCurrentState = readerState.dwEventState;
         }
     }
     
-    status = SCardConnect(context,
-                          readerState.szReader, // or skip SCardListReaders and use the hard coded "
-                          SCARD_SHARE_EXCLUSIVE,
-                          SCARD_PROTOCOL_T0 | SCARD_PROTOCOL_T1,
-                          &card,
-                          &protocol);
+    status = SCardConnect(context, readerState.szReader, SCARD_SHARE_EXCLUSIVE, SCARD_PROTOCOL_T0 | SCARD_PROTOCOL_T1, &card, &protocol);
     
     NSLog(@"SCardConnect 0x%08x", status);
     
-    // if the card doesn't answer or if the card was just removed, just continue
-    if (status == SCARD_W_UNRESPONSIVE_CARD || status == SCARD_E_NO_SMARTCARD)
-    {
+    // If the card doesn't answer or if the card was just removed, just continue
+    if (status == SCARD_W_UNRESPONSIVE_CARD || status == SCARD_E_NO_SMARTCARD) {
         [self printCardStatus:@"Remove smart card..."];
         [self printData:@"SCardConnect failed"];
         [self appendData:[PBSmartCardUtils errorMessageFrom:[NSNumber numberWithUnsignedInt:status]]];
         goto retry;
-    }
-    else if (status != SCARD_S_SUCCESS)
-    {
+    } else if (status != SCARD_S_SUCCESS) {
         [errorText setString:@"SCardConnect failed"];
         goto cleanup;
     }
     
-    // set the protocol control information based on the selected protocol
-    switch (protocol)
-    {
+    // Set the protocol control information based on the selected protocol.
+    switch (protocol) {
         case SCARD_PROTOCOL_T0:
             sendPCI = *SCARD_PCI_T0;
             [self printData:@"Connected using T=0\n"];
             break;
+            
         case SCARD_PROTOCOL_T1:
             sendPCI = *SCARD_PCI_T1;
             [self printData:@"Connected using T=1\n"];
             break;
+            
         default:
             sendPCI = *SCARD_PCI_RAW;
             break;
     }
     
-    // we can re-use the card communication buffer to retrieve the ATR.
-    // since we only want to know the ATR we use NULL on the other parameters.
-    
+    // We can re-use the card communication buffer to retrieve the ATR. Since we only want to know the ATR we use NULL on the other parameters.
     receiveLength = sizeof(receiveBuffer);
     
-    status = SCardStatus(card,
-                         NULL,
-                         NULL,
-                         NULL,
-                         NULL,
-                         receiveBuffer,
-                         &receiveLength);
+    status = SCardStatus(card, NULL, NULL, NULL, NULL, receiveBuffer, &receiveLength);
     
     NSLog(@"SCardStatus 0x%08x", status);
     
-    if (status != SCARD_S_SUCCESS)
-    {
+    if (status != SCARD_S_SUCCESS) {
         [errorText setString:@"SCardTransmit failed on SCardStatus"];
         goto cleanup;
     }
     
     NSMutableString* atr = [[NSMutableString alloc]initWithString:@"ATR: "];
     
-    for(int i = 0; i < receiveLength; i++)
-    {
+    for(int i = 0; i < receiveLength; i++) {
         [atr appendString:[NSString stringWithFormat:@"%02X ", receiveBuffer[i]]];
     }
+    
     [self printCardStatus:atr];
     
-    // see www.globalplatform.org for more information about this command.
+    // See www.globalplatform.org for more information about this command.
     // CLA = 0x80
     // INS = 0xCa
     // P1  = 0x9F
     // P2  = 0x7F
     // Le  = 0x00
-    unsigned char get_cplc_command[] = {0x80, 0xCA, 0x9F, 0x7F, 0x00};
+    unsigned char get_cplc_command[] = { 0x80, 0xCA, 0x9F, 0x7F, 0x00 };
     
-    // on input receive_length holds the size of the receive buffer.
+    // On input receive_length holds the size of the receive buffer.
     receiveLength = sizeof(receiveBuffer);
     
-    status = SCardTransmit(card,
-                           &sendPCI,
-                           get_cplc_command,
-                           sizeof(get_cplc_command),
-                           NULL,
-                           receiveBuffer,
-                           &receiveLength);
+    status = SCardTransmit(card, &sendPCI, get_cplc_command, sizeof(get_cplc_command), NULL, receiveBuffer, &receiveLength);
     
     NSLog(@"SCardTransmit 0x%08x", status);
     
-    // card was removed during tranceive. not a hard error so we just restart the loop.
-    if (status == SCARD_W_REMOVED_CARD)
-    {
+    // Ccard was removed during tranceive. Not a hard error so we just restart the loop.
+    if (status == SCARD_W_REMOVED_CARD){
         goto retry;
-    }
-    else if (status != SCARD_S_SUCCESS)
-    {
+    } else if (status != SCARD_S_SUCCESS) {
         [errorText setString:@"SCardTransmit failed on CPLC (w/ Le 0)"];
         goto cleanup;
     }
     
-    if (receiveBuffer[receiveLength-2] == 0x6C)
-    {
-        // re-send the command with correct Le reported by the card in SW2.
+    if (receiveBuffer[receiveLength-2] == 0x6C) {
+        // Re-send the command with correct Le reported by the card in SW2.
         get_cplc_command[4] = receiveBuffer[receiveLength-1];
         receiveLength = sizeof(receiveBuffer);
         
-        status = SCardTransmit(card,
-                               &sendPCI,
-                               get_cplc_command,
-                               sizeof(get_cplc_command),
-                               NULL,
-                               receiveBuffer,
-                               &receiveLength);
+        status = SCardTransmit(card, &sendPCI, get_cplc_command, sizeof(get_cplc_command), NULL, receiveBuffer, &receiveLength);
         
         NSLog(@"SCardTransmit 0x%08x", status);
         
-        // card was removed during tranceive. not a hard error so we just restart the loop.
-        if (status == SCARD_W_REMOVED_CARD)
-        {
+        // Ccard was removed during tranceive. Not a hard error so we just restart the loop.
+        if (status == SCARD_W_REMOVED_CARD) {
             goto retry;
-        }
-        else if (status != SCARD_S_SUCCESS)
-        {
+        } else if (status != SCARD_S_SUCCESS) {
             [errorText setString:@"SCardTransmit failed on CPLC (w/ Le > 0)"];
             goto cleanup;
         }
-    }
-    else if (receiveBuffer[receiveLength-2] == 0x6C)
-    {
-        unsigned char get_response[] = {0x00, 0xC0, 0x00, 0x00, 0x00};
+    } else if (receiveBuffer[receiveLength-2] == 0x6C) {
+        unsigned char get_response[] = { 0x00, 0xC0, 0x00, 0x00, 0x00 };
         // SW 2 contains the number of bytes remaining
         get_response[4] = receiveBuffer[receiveLength-1];
         receiveLength = sizeof(receiveBuffer);
@@ -366,13 +301,10 @@ again: {
         
         NSLog(@"SCardTransmit 0x%08x", status);
         
-        // card was removed during tranceive. not a hard error so we just restart the loop.
-        if (status == SCARD_W_REMOVED_CARD)
-        {
+        // Card was removed during tranceive. Nnot a hard error so we just restart the loop.
+        if (status == SCARD_W_REMOVED_CARD) {
             goto retry;
-        }
-        else if (status != SCARD_S_SUCCESS)
-        {
+        } else if (status != SCARD_S_SUCCESS) {
             [errorText setString:@"SCardTransmit failed on GET RESPONSE"];
             goto cleanup;
         }
@@ -380,10 +312,8 @@ again: {
     
     NSMutableString* cplc = [[NSMutableString alloc]init];
     
-    if (receiveBuffer[receiveLength-2] == 0x90 &&
-        receiveBuffer[receiveLength-1] == 0x00)
-    {
-        // we do not validate the data in this example - we assume that it is correct...
+    if (receiveBuffer[receiveLength-2] == 0x90 && receiveBuffer[receiveLength-1] == 0x00) {
+        // We do not validate the data in this example - we assume that it is correct...
         unsigned char* p = receiveBuffer + 3; // jump directly to data
         
         [cplc appendString:[NSString stringWithFormat:@"IC fabricator = %02X%02X\n",p[0],p[1]]];
@@ -404,10 +334,8 @@ again: {
         [cplc appendString:[NSString stringWithFormat:@"IC personzalizer = %02X%02X\n", p[35],p[36]]];
         [cplc appendString:[NSString stringWithFormat:@"IC perso. date = %02X%02X\n", p[37],p[38]]];
         [cplc appendString:[NSString stringWithFormat:@"IC perso. equipment ID = %02X%02X%02X%02X\n",p[39],p[41],p[42],p[43]]];
-    }
-    else
-    {
-        // the card responded to the CPLC with an error or warning. See ISO7816-4 for details on the different status words (SW)
+    } else {
+        // The card responded to the CPLC with an error or warning. See ISO7816-4 for details on the different status words (SW)
         [cplc appendString:@"Card responds with status word 0x"];
         [cplc appendString:[NSString stringWithFormat:@"%02X%02X",receiveBuffer[receiveLength-2], receiveBuffer[receiveLength-1]]];
         [cplc appendString:@" on the CPLC request. This smart card does not appear to support Global Platform."];
@@ -417,43 +345,29 @@ again: {
 }
     
 retry: {
-    
-    NSLog(@"retry:\n");
-    
     status = SCardDisconnect(card, SCARD_UNPOWER_CARD);
     NSLog(@"SCardDisconnect 0x%08x", status);
     
-    // get the current state of the reader.
-    // here we wait for an "infinite" amount of time instead of 10 seconds as before, both ways are applicable.
+    // Get the current state of the reader. Here we wait for an "infinite" amount of time instead of 10 seconds as before, both ways are applicable.
     readerState.dwCurrentState = SCARD_STATE_UNAWARE;
     status = SCardGetStatusChange(context, INFINITE, &readerState, 1);
     
     NSLog(@"SCardGetStatusChange 0x%08x", status);
     
-    if (status != SCARD_S_SUCCESS)
-    {
+    if (status != SCARD_S_SUCCESS) {
         [errorText setString:@"SCardGetStatusChange failed"];
         goto cleanup;
     }
     
-    if (readerState.dwEventState &  SCARD_STATE_PRESENT)
-    {
+    if (readerState.dwEventState &  SCARD_STATE_PRESENT) {
         
         readerState.dwCurrentState = readerState.dwEventState;
         status = SCardGetStatusChange(context, INFINITE, &readerState, 1);
         NSLog(@"SCardGetStatusChange 0x%08x", status);
         
-        if (status == SCARD_E_TIMEOUT || status == SCARD_E_READER_UNAVAILABLE)
-        {
-            // This is not considered an error.
-            // SCardGetStatusChange can return SCARD_E_READER_UNAVAILABLE if called just as iOS
-            // decides to end the underlying EASession. The app need to be aware that this
-            // situation can happen and more frequently than unplugging the USB cable of a smart
-            // card reader on a PC/Mac.
-            // In this example we just continue the loop as usual.
-        }
-        else if (status != SCARD_S_SUCCESS)
-        {
+        if (status == SCARD_E_TIMEOUT || status == SCARD_E_READER_UNAVAILABLE) {
+            // This is not considered an error. SCardGetStatusChange can return SCARD_E_READER_UNAVAILABLE if called just as iOS decides to end the underlying EASession. The app need to be aware that this situation can happen and more frequently than unplugging the USB cable of a smart card reader on a PC/Mac. In this example we just continue the loop as usual.
+        } else if (status != SCARD_S_SUCCESS) {
             [errorText setString:@"SCardGetStatusChange failed"];
             goto cleanup;
         }
@@ -464,8 +378,8 @@ retry: {
     
     goto again;
 }
-cleanup: {
     
+cleanup: {
     NSLog(@"cleanup:\n");
     [self printCardStatus:@""];
     [self printData:errorText];
@@ -477,8 +391,8 @@ cleanup: {
     
     goto start;
 }
-finalize:{
     
+finalize:{
     status = SCardDisconnect(card, SCARD_UNPOWER_CARD);
     
     NSLog(@"SCardDisconnect 0x%08x", status);
@@ -486,7 +400,7 @@ finalize:{
     status = SCardReleaseContext(context);
     
     NSLog(@"SCardReleaseContext 0x%08x", status);
-    // we ignore the return codes when disconnecting form the card and releasing the context since there isn't much to do if these functions return an error.
+    // We ignore the return codes when disconnecting form the card and releasing the context since there isn't much to do if these functions return an error.
     [trigger unlock];
 }
 }
