@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		312F51AA212D559E00505EBB /* NSNotification+CardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312F51A9212D559E00505EBB /* NSNotification+CardEvents.swift */; };
+		312F51AC212D55BC00505EBB /* Notification-Name+CardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312F51AB212D55BC00505EBB /* Notification-Name+CardEvents.swift */; };
+		312F51AF212D5C5700505EBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312F51AE212D5C5700505EBB /* AudioToolbox.framework */; };
+		31B4CA40212D45F90067BDEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4CA3F212D45F90067BDEE /* AppDelegate.swift */; };
+		31B4CA42212D45F90067BDEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4CA41212D45F90067BDEE /* ViewController.swift */; };
+		31B4CA45212D45F90067BDEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B4CA43212D45F90067BDEE /* Main.storyboard */; };
+		31B4CA47212D45FA0067BDEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B4CA46212D45FA0067BDEE /* Assets.xcassets */; };
+		31B4CA4A212D45FA0067BDEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B4CA48212D45FA0067BDEE /* LaunchScreen.storyboard */; };
+		31B4CA65212D48920067BDEE /* ADD_LIBRARY_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31B4CA62212D48920067BDEE /* ADD_LIBRARY_HERE.txt */; };
+		31B4CA66212D48920067BDEE /* libiOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B4CA63212D48920067BDEE /* libiOSLibrary.a */; };
+		31B4CA8A212D4B120067BDEE /* ADD_HEADERS_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31B4CA7B212D4B120067BDEE /* ADD_HEADERS_HERE.txt */; };
+		31B4CA8D212D500F0067BDEE /* PBSmartCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B4CA8C212D500F0067BDEE /* PBSmartCardUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		312F51A9212D559E00505EBB /* NSNotification+CardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+CardEvents.swift"; sourceTree = "<group>"; };
+		312F51AB212D55BC00505EBB /* Notification-Name+CardEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification-Name+CardEvents.swift"; sourceTree = "<group>"; };
+		312F51AE212D5C5700505EBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		31B4CA3C212D45F90067BDEE /* SmartCardSampleSwift1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCardSampleSwift1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B4CA3F212D45F90067BDEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31B4CA41212D45F90067BDEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31B4CA44212D45F90067BDEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31B4CA46212D45FA0067BDEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31B4CA49212D45FA0067BDEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31B4CA4B212D45FA0067BDEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31B4CA62212D48920067BDEE /* ADD_LIBRARY_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_LIBRARY_HERE.txt; sourceTree = "<group>"; };
+		31B4CA63212D48920067BDEE /* libiOSLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiOSLibrary.a; sourceTree = "<group>"; };
+		31B4CA7B212D4B120067BDEE /* ADD_HEADERS_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_HEADERS_HERE.txt; sourceTree = "<group>"; };
+		31B4CA7C212D4B120067BDEE /* PBBiometryTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryTemplate.h; sourceTree = "<group>"; };
+		31B4CA7D212D4B120067BDEE /* PBBiometryVerifyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifyConfig.h; sourceTree = "<group>"; };
+		31B4CA7E212D4B120067BDEE /* PBLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLibrary.h; sourceTree = "<group>"; };
+		31B4CA7F212D4B120067BDEE /* PBBiometryFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryFinger.h; sourceTree = "<group>"; };
+		31B4CA80212D4B120067BDEE /* PBAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBAccessory.h; sourceTree = "<group>"; };
+		31B4CA81212D4B120067BDEE /* PBBiometryDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryDatabase.h; sourceTree = "<group>"; };
+		31B4CA82212D4B120067BDEE /* PBBiometryVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifier.h; sourceTree = "<group>"; };
+		31B4CA83212D4B120067BDEE /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
+		31B4CA84212D4B120067BDEE /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
+		31B4CA85212D4B120067BDEE /* PBBiometryUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryUser.h; sourceTree = "<group>"; };
+		31B4CA86212D4B120067BDEE /* PBBiometryGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryGUI.h; sourceTree = "<group>"; };
+		31B4CA87212D4B120067BDEE /* PBBiometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometry.h; sourceTree = "<group>"; };
+		31B4CA88212D4B120067BDEE /* PBSmartcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcard.h; sourceTree = "<group>"; };
+		31B4CA89212D4B120067BDEE /* PBBiometryEnrollConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryEnrollConfig.h; sourceTree = "<group>"; };
+		31B4CA8B212D4B470067BDEE /* SmartCardSampleSwift1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartCardSampleSwift1-Bridging-Header.h"; sourceTree = "<group>"; };
+		31B4CA8C212D500F0067BDEE /* PBSmartCardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBSmartCardUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31B4CA39212D45F90067BDEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312F51AF212D5C5700505EBB /* AudioToolbox.framework in Frameworks */,
+				31B4CA66212D48920067BDEE /* libiOSLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		312F51AD212D5C5700505EBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				312F51AE212D5C5700505EBB /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31B4CA33212D45F90067BDEE = {
+			isa = PBXGroup;
+			children = (
+				31B4CA7A212D4B120067BDEE /* include */,
+				31B4CA61212D48920067BDEE /* lib */,
+				31B4CA3E212D45F90067BDEE /* SmartCardSampleSwift1 */,
+				31B4CA3D212D45F90067BDEE /* Products */,
+				312F51AD212D5C5700505EBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31B4CA3D212D45F90067BDEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31B4CA3C212D45F90067BDEE /* SmartCardSampleSwift1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31B4CA3E212D45F90067BDEE /* SmartCardSampleSwift1 */ = {
+			isa = PBXGroup;
+			children = (
+				31B4CA3F212D45F90067BDEE /* AppDelegate.swift */,
+				31B4CA41212D45F90067BDEE /* ViewController.swift */,
+				31B4CA43212D45F90067BDEE /* Main.storyboard */,
+				31B4CA46212D45FA0067BDEE /* Assets.xcassets */,
+				31B4CA48212D45FA0067BDEE /* LaunchScreen.storyboard */,
+				31B4CA4B212D45FA0067BDEE /* Info.plist */,
+				31B4CA8B212D4B470067BDEE /* SmartCardSampleSwift1-Bridging-Header.h */,
+				31B4CA8C212D500F0067BDEE /* PBSmartCardUtils.swift */,
+				312F51A9212D559E00505EBB /* NSNotification+CardEvents.swift */,
+				312F51AB212D55BC00505EBB /* Notification-Name+CardEvents.swift */,
+			);
+			path = SmartCardSampleSwift1;
+			sourceTree = "<group>";
+		};
+		31B4CA61212D48920067BDEE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				31B4CA62212D48920067BDEE /* ADD_LIBRARY_HERE.txt */,
+				31B4CA63212D48920067BDEE /* libiOSLibrary.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		31B4CA7A212D4B120067BDEE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				31B4CA7B212D4B120067BDEE /* ADD_HEADERS_HERE.txt */,
+				31B4CA7C212D4B120067BDEE /* PBBiometryTemplate.h */,
+				31B4CA7D212D4B120067BDEE /* PBBiometryVerifyConfig.h */,
+				31B4CA7E212D4B120067BDEE /* PBLibrary.h */,
+				31B4CA7F212D4B120067BDEE /* PBBiometryFinger.h */,
+				31B4CA80212D4B120067BDEE /* PBAccessory.h */,
+				31B4CA81212D4B120067BDEE /* PBBiometryDatabase.h */,
+				31B4CA82212D4B120067BDEE /* PBBiometryVerifier.h */,
+				31B4CA83212D4B120067BDEE /* wintypes.h */,
+				31B4CA84212D4B120067BDEE /* winscard.h */,
+				31B4CA85212D4B120067BDEE /* PBBiometryUser.h */,
+				31B4CA86212D4B120067BDEE /* PBBiometryGUI.h */,
+				31B4CA87212D4B120067BDEE /* PBBiometry.h */,
+				31B4CA88212D4B120067BDEE /* PBSmartcard.h */,
+				31B4CA89212D4B120067BDEE /* PBBiometryEnrollConfig.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31B4CA3B212D45F90067BDEE /* SmartCardSampleSwift1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31B4CA4E212D45FA0067BDEE /* Build configuration list for PBXNativeTarget "SmartCardSampleSwift1" */;
+			buildPhases = (
+				31B4CA38212D45F90067BDEE /* Sources */,
+				31B4CA39212D45F90067BDEE /* Frameworks */,
+				31B4CA3A212D45F90067BDEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartCardSampleSwift1;
+			productName = SmartCardSampleSwift1;
+			productReference = 31B4CA3C212D45F90067BDEE /* SmartCardSampleSwift1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31B4CA34212D45F90067BDEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Identos GmbH";
+				TargetAttributes = {
+					31B4CA3B212D45F90067BDEE = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 31B4CA37212D45F90067BDEE /* Build configuration list for PBXProject "SmartCardSampleSwift1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31B4CA33212D45F90067BDEE;
+			productRefGroup = 31B4CA3D212D45F90067BDEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31B4CA3B212D45F90067BDEE /* SmartCardSampleSwift1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31B4CA3A212D45F90067BDEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B4CA8A212D4B120067BDEE /* ADD_HEADERS_HERE.txt in Resources */,
+				31B4CA65212D48920067BDEE /* ADD_LIBRARY_HERE.txt in Resources */,
+				31B4CA4A212D45FA0067BDEE /* LaunchScreen.storyboard in Resources */,
+				31B4CA47212D45FA0067BDEE /* Assets.xcassets in Resources */,
+				31B4CA45212D45F90067BDEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31B4CA38212D45F90067BDEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312F51AA212D559E00505EBB /* NSNotification+CardEvents.swift in Sources */,
+				31B4CA8D212D500F0067BDEE /* PBSmartCardUtils.swift in Sources */,
+				312F51AC212D55BC00505EBB /* Notification-Name+CardEvents.swift in Sources */,
+				31B4CA42212D45F90067BDEE /* ViewController.swift in Sources */,
+				31B4CA40212D45F90067BDEE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31B4CA43212D45F90067BDEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31B4CA44212D45F90067BDEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31B4CA48212D45FA0067BDEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31B4CA49212D45FA0067BDEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31B4CA4C212D45FA0067BDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31B4CA4D212D45FA0067BDEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31B4CA4F212D45FA0067BDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = SmartCardSampleSwift1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.SmartCardSampleSwift1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./SmartCardSampleSwift1/SmartCardSampleSwift1-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31B4CA50212D45FA0067BDEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = SmartCardSampleSwift1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.SmartCardSampleSwift1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./SmartCardSampleSwift1/SmartCardSampleSwift1-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31B4CA37212D45F90067BDEE /* Build configuration list for PBXProject "SmartCardSampleSwift1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B4CA4C212D45FA0067BDEE /* Debug */,
+				31B4CA4D212D45FA0067BDEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31B4CA4E212D45FA0067BDEE /* Build configuration list for PBXNativeTarget "SmartCardSampleSwift1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B4CA4F212D45FA0067BDEE /* Debug */,
+				31B4CA50212D45FA0067BDEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31B4CA34212D45F90067BDEE /* Project object */;
+}
