@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31F6B7F0214658D10070C39E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F6B7EF214658D10070C39E /* AppDelegate.swift */; };
+		31F6B7F2214658D10070C39E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F6B7F1214658D10070C39E /* ViewController.swift */; };
+		31F6B7F5214658D10070C39E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F6B7F3214658D10070C39E /* Main.storyboard */; };
+		31F6B7F7214658D20070C39E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F6B7F6214658D20070C39E /* Assets.xcassets */; };
+		31F6B7FA214658D20070C39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F6B7F8214658D20070C39E /* LaunchScreen.storyboard */; };
+		31F6B814214667CB0070C39E /* ADD_HEADERS_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31F6B802214667CB0070C39E /* ADD_HEADERS_HERE.txt */; };
+		31F6B815214667CB0070C39E /* ADD_LIBRARY_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31F6B812214667CB0070C39E /* ADD_LIBRARY_HERE.txt */; };
+		31F6B816214667CB0070C39E /* libiOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F6B813214667CB0070C39E /* libiOSLibrary.a */; };
+		31F6B81B214667D30070C39E /* PBSmartCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F6B817214667D30070C39E /* PBSmartCardUtils.swift */; };
+		31F6B81C214667D30070C39E /* Notification-Name+CardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F6B818214667D30070C39E /* Notification-Name+CardEvents.swift */; };
+		31F6B81D214667D30070C39E /* NSNotification+CardEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F6B819214667D30070C39E /* NSNotification+CardEvents.swift */; };
+		31F6B820214669B90070C39E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F6B81F214669B90070C39E /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31F6B7EC214658D10070C39E /* SmartCardSampleSwift2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCardSampleSwift2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F6B7EF214658D10070C39E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31F6B7F1214658D10070C39E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31F6B7F4214658D10070C39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31F6B7F6214658D20070C39E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31F6B7F9214658D20070C39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31F6B7FB214658D20070C39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F6B802214667CB0070C39E /* ADD_HEADERS_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_HEADERS_HERE.txt; sourceTree = "<group>"; };
+		31F6B803214667CB0070C39E /* PBBiometryTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryTemplate.h; sourceTree = "<group>"; };
+		31F6B804214667CB0070C39E /* PBBiometryVerifyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifyConfig.h; sourceTree = "<group>"; };
+		31F6B805214667CB0070C39E /* PBLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLibrary.h; sourceTree = "<group>"; };
+		31F6B806214667CB0070C39E /* PBBiometryFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryFinger.h; sourceTree = "<group>"; };
+		31F6B807214667CB0070C39E /* PBAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBAccessory.h; sourceTree = "<group>"; };
+		31F6B808214667CB0070C39E /* PBBiometryDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryDatabase.h; sourceTree = "<group>"; };
+		31F6B809214667CB0070C39E /* PBBiometryVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifier.h; sourceTree = "<group>"; };
+		31F6B80A214667CB0070C39E /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
+		31F6B80B214667CB0070C39E /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
+		31F6B80C214667CB0070C39E /* PBBiometryUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryUser.h; sourceTree = "<group>"; };
+		31F6B80D214667CB0070C39E /* PBBiometryGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryGUI.h; sourceTree = "<group>"; };
+		31F6B80E214667CB0070C39E /* PBBiometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometry.h; sourceTree = "<group>"; };
+		31F6B80F214667CB0070C39E /* PBSmartcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcard.h; sourceTree = "<group>"; };
+		31F6B810214667CB0070C39E /* PBBiometryEnrollConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryEnrollConfig.h; sourceTree = "<group>"; };
+		31F6B812214667CB0070C39E /* ADD_LIBRARY_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_LIBRARY_HERE.txt; sourceTree = "<group>"; };
+		31F6B813214667CB0070C39E /* libiOSLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiOSLibrary.a; sourceTree = "<group>"; };
+		31F6B817214667D30070C39E /* PBSmartCardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBSmartCardUtils.swift; sourceTree = "<group>"; };
+		31F6B818214667D30070C39E /* Notification-Name+CardEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification-Name+CardEvents.swift"; sourceTree = "<group>"; };
+		31F6B819214667D30070C39E /* NSNotification+CardEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+CardEvents.swift"; sourceTree = "<group>"; };
+		31F6B81A214667D30070C39E /* SmartCardSampleSwift2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmartCardSampleSwift2-Bridging-Header.h"; sourceTree = "<group>"; };
+		31F6B81F214669B90070C39E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31F6B7E9214658D10070C39E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F6B820214669B90070C39E /* AudioToolbox.framework in Frameworks */,
+				31F6B816214667CB0070C39E /* libiOSLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31F6B7E3214658D10070C39E = {
+			isa = PBXGroup;
+			children = (
+				31F6B801214667CB0070C39E /* include */,
+				31F6B811214667CB0070C39E /* lib */,
+				31F6B7EE214658D10070C39E /* SmartCardSampleSwift2 */,
+				31F6B7ED214658D10070C39E /* Products */,
+				31F6B81E214669B90070C39E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		31F6B7ED214658D10070C39E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F6B7EC214658D10070C39E /* SmartCardSampleSwift2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F6B7EE214658D10070C39E /* SmartCardSampleSwift2 */ = {
+			isa = PBXGroup;
+			children = (
+				31F6B7EF214658D10070C39E /* AppDelegate.swift */,
+				31F6B7F6214658D20070C39E /* Assets.xcassets */,
+				31F6B7FB214658D20070C39E /* Info.plist */,
+				31F6B7F8214658D20070C39E /* LaunchScreen.storyboard */,
+				31F6B7F3214658D10070C39E /* Main.storyboard */,
+				31F6B818214667D30070C39E /* Notification-Name+CardEvents.swift */,
+				31F6B819214667D30070C39E /* NSNotification+CardEvents.swift */,
+				31F6B817214667D30070C39E /* PBSmartCardUtils.swift */,
+				31F6B81A214667D30070C39E /* SmartCardSampleSwift2-Bridging-Header.h */,
+				31F6B7F1214658D10070C39E /* ViewController.swift */,
+			);
+			path = SmartCardSampleSwift2;
+			sourceTree = "<group>";
+		};
+		31F6B801214667CB0070C39E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				31F6B802214667CB0070C39E /* ADD_HEADERS_HERE.txt */,
+				31F6B803214667CB0070C39E /* PBBiometryTemplate.h */,
+				31F6B804214667CB0070C39E /* PBBiometryVerifyConfig.h */,
+				31F6B805214667CB0070C39E /* PBLibrary.h */,
+				31F6B806214667CB0070C39E /* PBBiometryFinger.h */,
+				31F6B807214667CB0070C39E /* PBAccessory.h */,
+				31F6B808214667CB0070C39E /* PBBiometryDatabase.h */,
+				31F6B809214667CB0070C39E /* PBBiometryVerifier.h */,
+				31F6B80A214667CB0070C39E /* wintypes.h */,
+				31F6B80B214667CB0070C39E /* winscard.h */,
+				31F6B80C214667CB0070C39E /* PBBiometryUser.h */,
+				31F6B80D214667CB0070C39E /* PBBiometryGUI.h */,
+				31F6B80E214667CB0070C39E /* PBBiometry.h */,
+				31F6B80F214667CB0070C39E /* PBSmartcard.h */,
+				31F6B810214667CB0070C39E /* PBBiometryEnrollConfig.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		31F6B811214667CB0070C39E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				31F6B812214667CB0070C39E /* ADD_LIBRARY_HERE.txt */,
+				31F6B813214667CB0070C39E /* libiOSLibrary.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		31F6B81E214669B90070C39E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31F6B81F214669B90070C39E /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31F6B7EB214658D10070C39E /* SmartCardSampleSwift2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F6B7FE214658D20070C39E /* Build configuration list for PBXNativeTarget "SmartCardSampleSwift2" */;
+			buildPhases = (
+				31F6B7E8214658D10070C39E /* Sources */,
+				31F6B7E9214658D10070C39E /* Frameworks */,
+				31F6B7EA214658D10070C39E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartCardSampleSwift2;
+			productName = SmartCardSampleSwift2;
+			productReference = 31F6B7EC214658D10070C39E /* SmartCardSampleSwift2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31F6B7E4214658D10070C39E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Identos GmbH";
+				TargetAttributes = {
+					31F6B7EB214658D10070C39E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 31F6B7E7214658D10070C39E /* Build configuration list for PBXProject "SmartCardSampleSwift2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31F6B7E3214658D10070C39E;
+			productRefGroup = 31F6B7ED214658D10070C39E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31F6B7EB214658D10070C39E /* SmartCardSampleSwift2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31F6B7EA214658D10070C39E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F6B815214667CB0070C39E /* ADD_LIBRARY_HERE.txt in Resources */,
+				31F6B7FA214658D20070C39E /* LaunchScreen.storyboard in Resources */,
+				31F6B814214667CB0070C39E /* ADD_HEADERS_HERE.txt in Resources */,
+				31F6B7F7214658D20070C39E /* Assets.xcassets in Resources */,
+				31F6B7F5214658D10070C39E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31F6B7E8214658D10070C39E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F6B81C214667D30070C39E /* Notification-Name+CardEvents.swift in Sources */,
+				31F6B81B214667D30070C39E /* PBSmartCardUtils.swift in Sources */,
+				31F6B81D214667D30070C39E /* NSNotification+CardEvents.swift in Sources */,
+				31F6B7F2214658D10070C39E /* ViewController.swift in Sources */,
+				31F6B7F0214658D10070C39E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31F6B7F3214658D10070C39E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31F6B7F4214658D10070C39E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31F6B7F8214658D20070C39E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31F6B7F9214658D20070C39E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31F6B7FC214658D20070C39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31F6B7FD214658D20070C39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31F6B7FF214658D20070C39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = SmartCardSampleSwift2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.SmartCardSampleSwift2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./SmartCardSampleSwift2/SmartCardSampleSwift2-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31F6B800214658D20070C39E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include";
+				INFOPLIST_FILE = SmartCardSampleSwift2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.SmartCardSampleSwift2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./SmartCardSampleSwift2/SmartCardSampleSwift2-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31F6B7E7214658D10070C39E /* Build configuration list for PBXProject "SmartCardSampleSwift2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F6B7FC214658D20070C39E /* Debug */,
+				31F6B7FD214658D20070C39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F6B7FE214658D20070C39E /* Build configuration list for PBXNativeTarget "SmartCardSampleSwift2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F6B7FF214658D20070C39E /* Debug */,
+				31F6B800214658D20070C39E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31F6B7E4214658D10070C39E /* Project object */;
+}
