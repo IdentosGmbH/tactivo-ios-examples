@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ra7-Ha-MJo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify finger-->
+        <scene sceneID="ZHa-Oq-cqc">
+            <objects>
+                <viewController id="ql6-Y3-U0W" customClass="VerifyFingerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pVy-zv-9YM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uJU-ic-GRE">
+                                <rect key="frame" x="95" y="80" width="264" height="124"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="sap-6C-eX9">
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="29"/>
+                                        <segments>
+                                            <segment title="3s"/>
+                                            <segment title="7.5s"/>
+                                            <segment title="Inf."/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="k0t-fh-yTZ">
+                                        <rect key="frame" x="0.0" y="48" width="264" height="29"/>
+                                        <segments>
+                                            <segment title="Low"/>
+                                            <segment title="Medium"/>
+                                            <segment title="High"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-vT-dfM">
+                                        <rect key="frame" x="0.0" y="96" width="264" height="29"/>
+                                        <segments>
+                                            <segment title="All"/>
+                                            <segment title="One"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="D1U-tU-y43">
+                                <rect key="frame" x="16" y="80" width="63" height="123.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GW-nk-7Ho">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLx-mc-Gv6">
+                                        <rect key="frame" x="0.0" y="51.5" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fingers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIp-2Q-icI">
+                                        <rect key="frame" x="0.0" y="103" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv0-eC-Efu">
+                                <rect key="frame" x="147.5" y="220" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="rHx-tQ-rrc"/>
+                                </constraints>
+                                <state key="normal" title="Verify"/>
+                                <connections>
+                                    <action selector="verifyFinger:" destination="ql6-Y3-U0W" eventType="touchUpInside" id="ol2-f6-A5e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D1U-tU-y43" firstAttribute="leading" secondItem="p1y-BV-WLa" secondAttribute="leading" constant="16" id="0xm-0Z-FE1"/>
+                            <constraint firstItem="tv0-eC-Efu" firstAttribute="top" secondItem="uJU-ic-GRE" secondAttribute="bottom" constant="16" id="37u-Nd-SH7"/>
+                            <constraint firstItem="uJU-ic-GRE" firstAttribute="top" secondItem="p1y-BV-WLa" secondAttribute="top" constant="16" id="Fga-h2-XyO"/>
+                            <constraint firstItem="uJU-ic-GRE" firstAttribute="leading" secondItem="D1U-tU-y43" secondAttribute="trailing" constant="16" id="GOn-uK-gHY"/>
+                            <constraint firstItem="D1U-tU-y43" firstAttribute="top" secondItem="p1y-BV-WLa" secondAttribute="top" constant="16" id="U5p-xZ-bHw"/>
+                            <constraint firstItem="tv0-eC-Efu" firstAttribute="centerX" secondItem="pVy-zv-9YM" secondAttribute="centerX" id="YfR-Dj-yjX"/>
+                            <constraint firstItem="p1y-BV-WLa" firstAttribute="trailing" secondItem="uJU-ic-GRE" secondAttribute="trailing" constant="16" id="rhI-4X-lwb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p1y-BV-WLa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Verify finger" id="9et-97-S2O"/>
+                    <connections>
+                        <outlet property="fingersSegment" destination="yZ7-vT-dfM" id="uj2-Ct-F7B"/>
+                        <outlet property="securitySegment" destination="k0t-fh-yTZ" id="8FE-uX-qNE"/>
+                        <outlet property="timeoutSegment" destination="sap-6C-eX9" id="ybI-tw-b62"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFT-B7-3yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="-611.24437781109452"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H66-1V-uks">
+            <objects>
+                <tabBarController id="Ra7-Ha-MJo" customClass="ViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nBb-Uq-oKx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vKj-YS-RJy" kind="relationship" relationship="viewControllers" id="HPz-Xq-H6n"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sho-gY-4dW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142" y="-279"/>
+        </scene>
+        <!--Verify finger-->
+        <scene sceneID="NVo-lP-FZ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vKj-YS-RJy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Verify finger" image="fingerprint" id="2zw-O7-M11"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pB1-Cj-Xg1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ql6-Y3-U0W" kind="relationship" relationship="rootViewController" id="uNb-VH-FDg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6Z-ry-MyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.79999999999995" y="-611.24437781109452"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fingerprint" width="25" height="25"/>
+    </resources>
+</document>
