@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31320000216B301D001BAF16 /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA2216B301D001BAF16 /* arrow_right@2x.png */; };
+		31320001216B301D001BAF16 /* left_middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA3216B301D001BAF16 /* left_middle.png */; };
+		31320002216B301D001BAF16 /* right_ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA4216B301D001BAF16 /* right_ring.png */; };
+		31320003216B301D001BAF16 /* connect_tactivo_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA5216B301D001BAF16 /* connect_tactivo_bottom.png */; };
+		31320004216B301D001BAF16 /* greenbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA6216B301D001BAF16 /* greenbackground.png */; };
+		31320005216B301D001BAF16 /* PBFingerPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFA8216B301D001BAF16 /* PBFingerPickerController.m */; };
+		31320006216B301D001BAF16 /* PBPractice1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA9216B301D001BAF16 /* PBPractice1.xib */; };
+		31320007216B301D001BAF16 /* PBPractice4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFAD216B301D001BAF16 /* PBPractice4.xib */; };
+		31320008216B301D001BAF16 /* PBPractice2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFAE216B301D001BAF16 /* PBPractice2Controller.m */; };
+		31320009216B301D001BAF16 /* PBPracticeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFB2216B301D001BAF16 /* PBPracticeController.xib */; };
+		3132000A216B301D001BAF16 /* ADD_REFERENCE_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFB6216B301D001BAF16 /* ADD_REFERENCE_HERE.txt */; };
+		3132000B216B301D001BAF16 /* PBSwipeFingerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFB7216B301D001BAF16 /* PBSwipeFingerView.m */; };
+		3132000C216B301D001BAF16 /* PBEnrollmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFB8216B301D001BAF16 /* PBEnrollmentController.m */; };
+		3132000D216B301D001BAF16 /* PBFingerPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFBA216B301D001BAF16 /* PBFingerPickerController.xib */; };
+		3132000E216B301D001BAF16 /* PBPractice4Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFBB216B301D001BAF16 /* PBPractice4Controller.m */; };
+		3132000F216B301D001BAF16 /* PBReferenceDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFBD216B301D001BAF16 /* PBReferenceDatabase.m */; };
+		31320010216B301D001BAF16 /* PBRotationTransparentNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFBE216B301D001BAF16 /* PBRotationTransparentNavigationController.m */; };
+		31320011216B301D001BAF16 /* PBVerificationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFBF216B301D001BAF16 /* PBVerificationController.xib */; };
+		31320012216B301D001BAF16 /* PBVerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFC0216B301D001BAF16 /* PBVerificationController.m */; };
+		31320013216B301D001BAF16 /* PBDisconnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFC1216B301D001BAF16 /* PBDisconnectionViewController.xib */; };
+		31320014216B301D001BAF16 /* PBManageFingersController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFC2216B301D001BAF16 /* PBManageFingersController.xib */; };
+		31320015216B301D001BAF16 /* PBEnrollmentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFC3216B301D001BAF16 /* PBEnrollmentController.xib */; };
+		31320016216B301D001BAF16 /* PBPractice1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FFC4216B301D001BAF16 /* PBPractice1Controller.m */; };
+		3132001A216B3180001BAF16 /* VerifyFingerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31320019216B3180001BAF16 /* VerifyFingerViewController.swift */; };
+		3132FF36216B2F66001BAF16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF35216B2F66001BAF16 /* AppDelegate.swift */; };
+		3132FF38216B2F66001BAF16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF37216B2F66001BAF16 /* ViewController.swift */; };
+		3132FF3B216B2F66001BAF16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF39216B2F66001BAF16 /* Main.storyboard */; };
+		3132FF3D216B2F68001BAF16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF3C216B2F68001BAF16 /* Assets.xcassets */; };
+		3132FF40216B2F68001BAF16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF3E216B2F68001BAF16 /* LaunchScreen.storyboard */; };
+		3132FFC5216B301D001BAF16 /* ADD_LIBRARY_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF48216B301D001BAF16 /* ADD_LIBRARY_HERE.txt */; };
+		3132FFC6216B301D001BAF16 /* libiOSLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3132FF49216B301D001BAF16 /* libiOSLibrary.a */; };
+		3132FFC7216B301D001BAF16 /* ADD_HEADERS_HERE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF4B216B301D001BAF16 /* ADD_HEADERS_HERE.txt */; };
+		3132FFC8216B301D001BAF16 /* PBDisconnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF5B216B301D001BAF16 /* PBDisconnectionViewController.m */; };
+		3132FFC9216B301D001BAF16 /* PBConnectTactivoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF5C216B301D001BAF16 /* PBConnectTactivoView.m */; };
+		3132FFCA216B301D001BAF16 /* PBPracticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF5D216B301D001BAF16 /* PBPracticeController.m */; };
+		3132FFCB216B301D001BAF16 /* PBSmartcard7816.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF5F216B301D001BAF16 /* PBSmartcard7816.m */; };
+		3132FFCC216B301D001BAF16 /* PBSmartcardAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF60216B301D001BAF16 /* PBSmartcardAppDelegate.m */; };
+		3132FFCD216B301D001BAF16 /* PBSmartcardBioManagerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF63216B301D001BAF16 /* PBSmartcardBioManagerContainer.m */; };
+		3132FFCE216B301D001BAF16 /* PBBiomatch3Verifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF65216B301D001BAF16 /* PBBiomatch3Verifier.m */; };
+		3132FFCF216B301D001BAF16 /* PBSmartcardBioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF66216B301D001BAF16 /* PBSmartcardBioManager.m */; };
+		3132FFD0216B301D001BAF16 /* PBBioMatch3Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF67216B301D001BAF16 /* PBBioMatch3Database.m */; };
+		3132FFD1216B301D001BAF16 /* PBSmartcardIDStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF68216B301D001BAF16 /* PBSmartcardIDStore.m */; };
+		3132FFD2216B301D001BAF16 /* PBSmartcardIDStoreContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF6C216B301D001BAF16 /* PBSmartcardIDStoreContainer.m */; };
+		3132FFD3216B301D001BAF16 /* PBManageFingersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF71216B301D001BAF16 /* PBManageFingersController.m */; };
+		3132FFD4216B301D001BAF16 /* PBFingerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF72216B301D001BAF16 /* PBFingerImageView.m */; };
+		3132FFD5216B301D001BAF16 /* PBPractice3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF73216B301D001BAF16 /* PBPractice3Controller.m */; };
+		3132FFD6216B301D001BAF16 /* PBPractice3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF74216B301D001BAF16 /* PBPractice3.xib */; };
+		3132FFD7216B301D001BAF16 /* PBBarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3132FF76216B301D001BAF16 /* PBBarImageView.m */; };
+		3132FFD8216B301D001BAF16 /* PBPractice2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF77216B301D001BAF16 /* PBPractice2.xib */; };
+		3132FFD9216B301D001BAF16 /* practice_hand_inside.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF7A216B301D001BAF16 /* practice_hand_inside.png */; };
+		3132FFDA216B301D001BAF16 /* tab_practice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF7B216B301D001BAF16 /* tab_practice@2x.png */; };
+		3132FFDB216B301D001BAF16 /* practice_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF7C216B301D001BAF16 /* practice_cross.png */; };
+		3132FFDC216B301D001BAF16 /* key_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF7D216B301D001BAF16 /* key_add.png */; };
+		3132FFDD216B301D001BAF16 /* right_index.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF7E216B301D001BAF16 /* right_index.png */; };
+		3132FFDE216B301D001BAF16 /* tab_managefingers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF7F216B301D001BAF16 /* tab_managefingers@2x.png */; };
+		3132FFDF216B301D001BAF16 /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF80216B301D001BAF16 /* arrow_right.png */; };
+		3132FFE0216B301D001BAF16 /* left_little.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF81216B301D001BAF16 /* left_little.png */; };
+		3132FFE1216B301D001BAF16 /* practice_sensor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF82216B301D001BAF16 /* practice_sensor.png */; };
+		3132FFE2216B301D001BAF16 /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF83216B301D001BAF16 /* arrow_left@2x.png */; };
+		3132FFE3216B301D001BAF16 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF84216B301D001BAF16 /* key.png */; };
+		3132FFE4216B301D001BAF16 /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF85216B301D001BAF16 /* arrow_left.png */; };
+		3132FFE5216B301D001BAF16 /* shell.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF86216B301D001BAF16 /* shell.png */; };
+		3132FFE6216B301D001BAF16 /* connect_tactivo_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF87216B301D001BAF16 /* connect_tactivo_iphone.png */; };
+		3132FFE7216B301D001BAF16 /* practice_hand_outside.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF88216B301D001BAF16 /* practice_hand_outside.png */; };
+		3132FFE8216B301D001BAF16 /* handprint_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF89216B301D001BAF16 /* handprint_right.png */; };
+		3132FFE9216B301D001BAF16 /* connect_tactivo_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF8A216B301D001BAF16 /* connect_tactivo_top.png */; };
+		3132FFEA216B301D001BAF16 /* key_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF8B216B301D001BAF16 /* key_delete.png */; };
+		3132FFEB216B301D001BAF16 /* right_little.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF8C216B301D001BAF16 /* right_little.png */; };
+		3132FFEC216B301D001BAF16 /* left_index.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF8D216B301D001BAF16 /* left_index.png */; };
+		3132FFED216B301D001BAF16 /* PBVerificationRejected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF8F216B301D001BAF16 /* PBVerificationRejected.wav */; };
+		3132FFEE216B301D001BAF16 /* PBSmartcardRemoved.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF90216B301D001BAF16 /* PBSmartcardRemoved.wav */; };
+		3132FFEF216B301D001BAF16 /* PBAccessoryDisconnected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF91216B301D001BAF16 /* PBAccessoryDisconnected.wav */; };
+		3132FFF0216B301D001BAF16 /* PBSmartcardInserted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF92216B301D001BAF16 /* PBSmartcardInserted.wav */; };
+		3132FFF1216B301D001BAF16 /* PBSwipeFailed.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF93216B301D001BAF16 /* PBSwipeFailed.wav */; };
+		3132FFF2216B301D001BAF16 /* PBVerificationAccepted.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF94216B301D001BAF16 /* PBVerificationAccepted.wav */; };
+		3132FFF3216B301D001BAF16 /* PBAccessoryConnected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF95216B301D001BAF16 /* PBAccessoryConnected.wav */; };
+		3132FFF4216B301D001BAF16 /* handprint_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF96216B301D001BAF16 /* handprint_left.png */; };
+		3132FFF5216B301D001BAF16 /* right_middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF97216B301D001BAF16 /* right_middle.png */; };
+		3132FFF6216B301D001BAF16 /* tab_managefingers.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF98216B301D001BAF16 /* tab_managefingers.png */; };
+		3132FFF7216B301D001BAF16 /* redbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF99216B301D001BAF16 /* redbackground.png */; };
+		3132FFF8216B301D001BAF16 /* reject.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF9A216B301D001BAF16 /* reject.png */; };
+		3132FFF9216B301D001BAF16 /* practice_mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF9B216B301D001BAF16 /* practice_mark.png */; };
+		3132FFFA216B301D001BAF16 /* left_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF9C216B301D001BAF16 /* left_thumb.png */; };
+		3132FFFB216B301D001BAF16 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF9D216B301D001BAF16 /* phone.png */; };
+		3132FFFC216B301D001BAF16 /* tab_practice.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF9E216B301D001BAF16 /* tab_practice.png */; };
+		3132FFFD216B301D001BAF16 /* accept.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FF9F216B301D001BAF16 /* accept.png */; };
+		3132FFFE216B301D001BAF16 /* right_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA0216B301D001BAF16 /* right_thumb.png */; };
+		3132FFFF216B301D001BAF16 /* left_ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 3132FFA1216B301D001BAF16 /* left_ring.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31320018216B307B001BAF16 /* BiometrySampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BiometrySampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		31320019216B3180001BAF16 /* VerifyFingerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyFingerViewController.swift; sourceTree = "<group>"; };
+		3132FF32216B2F66001BAF16 /* BiometrySampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometrySampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3132FF35216B2F66001BAF16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3132FF37216B2F66001BAF16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3132FF3A216B2F66001BAF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3132FF3C216B2F68001BAF16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3132FF3F216B2F68001BAF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3132FF41216B2F68001BAF16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3132FF48216B301D001BAF16 /* ADD_LIBRARY_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_LIBRARY_HERE.txt; sourceTree = "<group>"; };
+		3132FF49216B301D001BAF16 /* libiOSLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiOSLibrary.a; sourceTree = "<group>"; };
+		3132FF4B216B301D001BAF16 /* ADD_HEADERS_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_HEADERS_HERE.txt; sourceTree = "<group>"; };
+		3132FF4C216B301D001BAF16 /* PBBiometryTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryTemplate.h; sourceTree = "<group>"; };
+		3132FF4D216B301D001BAF16 /* PBBiometryVerifyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifyConfig.h; sourceTree = "<group>"; };
+		3132FF4E216B301D001BAF16 /* PBLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBLibrary.h; sourceTree = "<group>"; };
+		3132FF4F216B301D001BAF16 /* PBBiometryFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryFinger.h; sourceTree = "<group>"; };
+		3132FF50216B301D001BAF16 /* PBAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBAccessory.h; sourceTree = "<group>"; };
+		3132FF51216B301D001BAF16 /* PBBiometryDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryDatabase.h; sourceTree = "<group>"; };
+		3132FF52216B301D001BAF16 /* PBBiometryVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryVerifier.h; sourceTree = "<group>"; };
+		3132FF53216B301D001BAF16 /* wintypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wintypes.h; sourceTree = "<group>"; };
+		3132FF54216B301D001BAF16 /* winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winscard.h; sourceTree = "<group>"; };
+		3132FF55216B301D001BAF16 /* PBBiometryUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryUser.h; sourceTree = "<group>"; };
+		3132FF56216B301D001BAF16 /* PBBiometryGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryGUI.h; sourceTree = "<group>"; };
+		3132FF57216B301D001BAF16 /* PBBiometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometry.h; sourceTree = "<group>"; };
+		3132FF58216B301D001BAF16 /* PBSmartcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcard.h; sourceTree = "<group>"; };
+		3132FF59216B301D001BAF16 /* PBBiometryEnrollConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiometryEnrollConfig.h; sourceTree = "<group>"; };
+		3132FF5B216B301D001BAF16 /* PBDisconnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBDisconnectionViewController.m; sourceTree = "<group>"; };
+		3132FF5C216B301D001BAF16 /* PBConnectTactivoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBConnectTactivoView.m; sourceTree = "<group>"; };
+		3132FF5D216B301D001BAF16 /* PBPracticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPracticeController.m; sourceTree = "<group>"; };
+		3132FF5F216B301D001BAF16 /* PBSmartcard7816.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSmartcard7816.m; sourceTree = "<group>"; };
+		3132FF60216B301D001BAF16 /* PBSmartcardAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSmartcardAppDelegate.m; sourceTree = "<group>"; };
+		3132FF61216B301D001BAF16 /* PBBioMatch3Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBioMatch3Database.h; sourceTree = "<group>"; };
+		3132FF62216B301D001BAF16 /* PBSmartcardIDStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcardIDStore.h; sourceTree = "<group>"; };
+		3132FF63216B301D001BAF16 /* PBSmartcardBioManagerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSmartcardBioManagerContainer.m; sourceTree = "<group>"; };
+		3132FF64216B301D001BAF16 /* PBSmartcardIDStoreContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcardIDStoreContainer.h; sourceTree = "<group>"; };
+		3132FF65216B301D001BAF16 /* PBBiomatch3Verifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBiomatch3Verifier.m; sourceTree = "<group>"; };
+		3132FF66216B301D001BAF16 /* PBSmartcardBioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSmartcardBioManager.m; sourceTree = "<group>"; };
+		3132FF67216B301D001BAF16 /* PBBioMatch3Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBioMatch3Database.m; sourceTree = "<group>"; };
+		3132FF68216B301D001BAF16 /* PBSmartcardIDStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSmartcardIDStore.m; sourceTree = "<group>"; };
+		3132FF69216B301D001BAF16 /* PBSmartcardAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcardAppDelegate.h; sourceTree = "<group>"; };
+		3132FF6A216B301D001BAF16 /* PBSmartcard7816.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcard7816.h; sourceTree = "<group>"; };
+		3132FF6B216B301D001BAF16 /* PBSmartcardBioManagerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcardBioManagerContainer.h; sourceTree = "<group>"; };
+		3132FF6C216B301D001BAF16 /* PBSmartcardIDStoreContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSmartcardIDStoreContainer.m; sourceTree = "<group>"; };
+		3132FF6D216B301D001BAF16 /* PBSmartcardBioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSmartcardBioManager.h; sourceTree = "<group>"; };
+		3132FF6E216B301D001BAF16 /* PBBiomatch3Verifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBiomatch3Verifier.h; sourceTree = "<group>"; };
+		3132FF6F216B301D001BAF16 /* PBPractice2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPractice2Controller.h; sourceTree = "<group>"; };
+		3132FF70216B301D001BAF16 /* PBSwipeFingerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBSwipeFingerView.h; sourceTree = "<group>"; };
+		3132FF71216B301D001BAF16 /* PBManageFingersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBManageFingersController.m; sourceTree = "<group>"; };
+		3132FF72216B301D001BAF16 /* PBFingerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFingerImageView.m; sourceTree = "<group>"; };
+		3132FF73216B301D001BAF16 /* PBPractice3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPractice3Controller.m; sourceTree = "<group>"; };
+		3132FF74216B301D001BAF16 /* PBPractice3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBPractice3.xib; sourceTree = "<group>"; };
+		3132FF75216B301D001BAF16 /* PBReferenceDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBReferenceDatabase.h; sourceTree = "<group>"; };
+		3132FF76216B301D001BAF16 /* PBBarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBBarImageView.m; sourceTree = "<group>"; };
+		3132FF77216B301D001BAF16 /* PBPractice2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBPractice2.xib; sourceTree = "<group>"; };
+		3132FF78216B301D001BAF16 /* PBPractice4Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPractice4Controller.h; sourceTree = "<group>"; };
+		3132FF7A216B301D001BAF16 /* practice_hand_inside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = practice_hand_inside.png; sourceTree = "<group>"; };
+		3132FF7B216B301D001BAF16 /* tab_practice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_practice@2x.png"; sourceTree = "<group>"; };
+		3132FF7C216B301D001BAF16 /* practice_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = practice_cross.png; sourceTree = "<group>"; };
+		3132FF7D216B301D001BAF16 /* key_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_add.png; sourceTree = "<group>"; };
+		3132FF7E216B301D001BAF16 /* right_index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_index.png; sourceTree = "<group>"; };
+		3132FF7F216B301D001BAF16 /* tab_managefingers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_managefingers@2x.png"; sourceTree = "<group>"; };
+		3132FF80216B301D001BAF16 /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
+		3132FF81216B301D001BAF16 /* left_little.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_little.png; sourceTree = "<group>"; };
+		3132FF82216B301D001BAF16 /* practice_sensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = practice_sensor.png; sourceTree = "<group>"; };
+		3132FF83216B301D001BAF16 /* arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_left@2x.png"; sourceTree = "<group>"; };
+		3132FF84216B301D001BAF16 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		3132FF85216B301D001BAF16 /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left.png; sourceTree = "<group>"; };
+		3132FF86216B301D001BAF16 /* shell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shell.png; sourceTree = "<group>"; };
+		3132FF87216B301D001BAF16 /* connect_tactivo_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_tactivo_iphone.png; sourceTree = "<group>"; };
+		3132FF88216B301D001BAF16 /* practice_hand_outside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = practice_hand_outside.png; sourceTree = "<group>"; };
+		3132FF89216B301D001BAF16 /* handprint_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handprint_right.png; sourceTree = "<group>"; };
+		3132FF8A216B301D001BAF16 /* connect_tactivo_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_tactivo_top.png; sourceTree = "<group>"; };
+		3132FF8B216B301D001BAF16 /* key_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_delete.png; sourceTree = "<group>"; };
+		3132FF8C216B301D001BAF16 /* right_little.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_little.png; sourceTree = "<group>"; };
+		3132FF8D216B301D001BAF16 /* left_index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_index.png; sourceTree = "<group>"; };
+		3132FF8F216B301D001BAF16 /* PBVerificationRejected.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PBVerificationRejected.wav; sourceTree = "<group>"; };
+		3132FF90216B301D001BAF16 /* PBSmartcardRemoved.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PBSmartcardRemoved.wav; sourceTree = "<group>"; };
+		3132FF91216B301D001BAF16 /* PBAccessoryDisconnected.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PBAccessoryDisconnected.wav; sourceTree = "<group>"; };
+		3132FF92216B301D001BAF16 /* PBSmartcardInserted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PBSmartcardInserted.wav; sourceTree = "<group>"; };
+		3132FF93216B301D001BAF16 /* PBSwipeFailed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PBSwipeFailed.wav; sourceTree = "<group>"; };
+		3132FF94216B301D001BAF16 /* PBVerificationAccepted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PBVerificationAccepted.wav; sourceTree = "<group>"; };
+		3132FF95216B301D001BAF16 /* PBAccessoryConnected.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PBAccessoryConnected.wav; sourceTree = "<group>"; };
+		3132FF96216B301D001BAF16 /* handprint_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handprint_left.png; sourceTree = "<group>"; };
+		3132FF97216B301D001BAF16 /* right_middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_middle.png; sourceTree = "<group>"; };
+		3132FF98216B301D001BAF16 /* tab_managefingers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_managefingers.png; sourceTree = "<group>"; };
+		3132FF99216B301D001BAF16 /* redbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbackground.png; sourceTree = "<group>"; };
+		3132FF9A216B301D001BAF16 /* reject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reject.png; sourceTree = "<group>"; };
+		3132FF9B216B301D001BAF16 /* practice_mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = practice_mark.png; sourceTree = "<group>"; };
+		3132FF9C216B301D001BAF16 /* left_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_thumb.png; sourceTree = "<group>"; };
+		3132FF9D216B301D001BAF16 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		3132FF9E216B301D001BAF16 /* tab_practice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_practice.png; sourceTree = "<group>"; };
+		3132FF9F216B301D001BAF16 /* accept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accept.png; sourceTree = "<group>"; };
+		3132FFA0216B301D001BAF16 /* right_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_thumb.png; sourceTree = "<group>"; };
+		3132FFA1216B301D001BAF16 /* left_ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_ring.png; sourceTree = "<group>"; };
+		3132FFA2216B301D001BAF16 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
+		3132FFA3216B301D001BAF16 /* left_middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_middle.png; sourceTree = "<group>"; };
+		3132FFA4216B301D001BAF16 /* right_ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_ring.png; sourceTree = "<group>"; };
+		3132FFA5216B301D001BAF16 /* connect_tactivo_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_tactivo_bottom.png; sourceTree = "<group>"; };
+		3132FFA6216B301D001BAF16 /* greenbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbackground.png; sourceTree = "<group>"; };
+		3132FFA7216B301D001BAF16 /* PBEnrollmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBEnrollmentController.h; sourceTree = "<group>"; };
+		3132FFA8216B301D001BAF16 /* PBFingerPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBFingerPickerController.m; sourceTree = "<group>"; };
+		3132FFA9216B301D001BAF16 /* PBPractice1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBPractice1.xib; sourceTree = "<group>"; };
+		3132FFAA216B301D001BAF16 /* PBPractice1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPractice1Controller.h; sourceTree = "<group>"; };
+		3132FFAB216B301D001BAF16 /* PBVerificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBVerificationController.h; sourceTree = "<group>"; };
+		3132FFAC216B301D001BAF16 /* PBRotationTransparentNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBRotationTransparentNavigationController.h; sourceTree = "<group>"; };
+		3132FFAD216B301D001BAF16 /* PBPractice4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBPractice4.xib; sourceTree = "<group>"; };
+		3132FFAE216B301D001BAF16 /* PBPractice2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPractice2Controller.m; sourceTree = "<group>"; };
+		3132FFAF216B301D001BAF16 /* PBConnectTactivoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBConnectTactivoView.h; sourceTree = "<group>"; };
+		3132FFB0216B301D001BAF16 /* PBPracticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPracticeController.h; sourceTree = "<group>"; };
+		3132FFB1216B301D001BAF16 /* PBDisconnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBDisconnectionViewController.h; sourceTree = "<group>"; };
+		3132FFB2216B301D001BAF16 /* PBPracticeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBPracticeController.xib; sourceTree = "<group>"; };
+		3132FFB3216B301D001BAF16 /* PBFingerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFingerImageView.h; sourceTree = "<group>"; };
+		3132FFB4216B301D001BAF16 /* PBPractice3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBPractice3Controller.h; sourceTree = "<group>"; };
+		3132FFB5216B301D001BAF16 /* PBManageFingersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBManageFingersController.h; sourceTree = "<group>"; };
+		3132FFB6216B301D001BAF16 /* ADD_REFERENCE_HERE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ADD_REFERENCE_HERE.txt; sourceTree = "<group>"; };
+		3132FFB7216B301D001BAF16 /* PBSwipeFingerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBSwipeFingerView.m; sourceTree = "<group>"; };
+		3132FFB8216B301D001BAF16 /* PBEnrollmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBEnrollmentController.m; sourceTree = "<group>"; };
+		3132FFB9216B301D001BAF16 /* PBFingerPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBFingerPickerController.h; sourceTree = "<group>"; };
+		3132FFBA216B301D001BAF16 /* PBFingerPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBFingerPickerController.xib; sourceTree = "<group>"; };
+		3132FFBB216B301D001BAF16 /* PBPractice4Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPractice4Controller.m; sourceTree = "<group>"; };
+		3132FFBC216B301D001BAF16 /* PBBarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBBarImageView.h; sourceTree = "<group>"; };
+		3132FFBD216B301D001BAF16 /* PBReferenceDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBReferenceDatabase.m; sourceTree = "<group>"; };
+		3132FFBE216B301D001BAF16 /* PBRotationTransparentNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBRotationTransparentNavigationController.m; sourceTree = "<group>"; };
+		3132FFBF216B301D001BAF16 /* PBVerificationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBVerificationController.xib; sourceTree = "<group>"; };
+		3132FFC0216B301D001BAF16 /* PBVerificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBVerificationController.m; sourceTree = "<group>"; };
+		3132FFC1216B301D001BAF16 /* PBDisconnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBDisconnectionViewController.xib; sourceTree = "<group>"; };
+		3132FFC2216B301D001BAF16 /* PBManageFingersController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBManageFingersController.xib; sourceTree = "<group>"; };
+		3132FFC3216B301D001BAF16 /* PBEnrollmentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PBEnrollmentController.xib; sourceTree = "<group>"; };
+		3132FFC4216B301D001BAF16 /* PBPractice1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBPractice1Controller.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3132FF2F216B2F66001BAF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3132FFC6216B301D001BAF16 /* libiOSLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3132FF29216B2F66001BAF16 = {
+			isa = PBXGroup;
+			children = (
+				3132FF4A216B301D001BAF16 /* include */,
+				3132FF47216B301D001BAF16 /* lib */,
+				3132FF5A216B301D001BAF16 /* reference */,
+				3132FF34216B2F66001BAF16 /* src */,
+				3132FF33216B2F66001BAF16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3132FF33216B2F66001BAF16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF32216B2F66001BAF16 /* BiometrySampleSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3132FF34216B2F66001BAF16 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF35216B2F66001BAF16 /* AppDelegate.swift */,
+				3132FF37216B2F66001BAF16 /* ViewController.swift */,
+				3132FF39216B2F66001BAF16 /* Main.storyboard */,
+				3132FF3C216B2F68001BAF16 /* Assets.xcassets */,
+				3132FF3E216B2F68001BAF16 /* LaunchScreen.storyboard */,
+				3132FF41216B2F68001BAF16 /* Info.plist */,
+				31320018216B307B001BAF16 /* BiometrySampleSwift-Bridging-Header.h */,
+				31320019216B3180001BAF16 /* VerifyFingerViewController.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		3132FF47216B301D001BAF16 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF48216B301D001BAF16 /* ADD_LIBRARY_HERE.txt */,
+				3132FF49216B301D001BAF16 /* libiOSLibrary.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3132FF4A216B301D001BAF16 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF4B216B301D001BAF16 /* ADD_HEADERS_HERE.txt */,
+				3132FF4C216B301D001BAF16 /* PBBiometryTemplate.h */,
+				3132FF4D216B301D001BAF16 /* PBBiometryVerifyConfig.h */,
+				3132FF4E216B301D001BAF16 /* PBLibrary.h */,
+				3132FF4F216B301D001BAF16 /* PBBiometryFinger.h */,
+				3132FF50216B301D001BAF16 /* PBAccessory.h */,
+				3132FF51216B301D001BAF16 /* PBBiometryDatabase.h */,
+				3132FF52216B301D001BAF16 /* PBBiometryVerifier.h */,
+				3132FF53216B301D001BAF16 /* wintypes.h */,
+				3132FF54216B301D001BAF16 /* winscard.h */,
+				3132FF55216B301D001BAF16 /* PBBiometryUser.h */,
+				3132FF56216B301D001BAF16 /* PBBiometryGUI.h */,
+				3132FF57216B301D001BAF16 /* PBBiometry.h */,
+				3132FF58216B301D001BAF16 /* PBSmartcard.h */,
+				3132FF59216B301D001BAF16 /* PBBiometryEnrollConfig.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		3132FF5A216B301D001BAF16 /* reference */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF5B216B301D001BAF16 /* PBDisconnectionViewController.m */,
+				3132FF5C216B301D001BAF16 /* PBConnectTactivoView.m */,
+				3132FF5D216B301D001BAF16 /* PBPracticeController.m */,
+				3132FF5E216B301D001BAF16 /* Smartcard */,
+				3132FF6F216B301D001BAF16 /* PBPractice2Controller.h */,
+				3132FF70216B301D001BAF16 /* PBSwipeFingerView.h */,
+				3132FF71216B301D001BAF16 /* PBManageFingersController.m */,
+				3132FF72216B301D001BAF16 /* PBFingerImageView.m */,
+				3132FF73216B301D001BAF16 /* PBPractice3Controller.m */,
+				3132FF74216B301D001BAF16 /* PBPractice3.xib */,
+				3132FF75216B301D001BAF16 /* PBReferenceDatabase.h */,
+				3132FF76216B301D001BAF16 /* PBBarImageView.m */,
+				3132FF77216B301D001BAF16 /* PBPractice2.xib */,
+				3132FF78216B301D001BAF16 /* PBPractice4Controller.h */,
+				3132FF79216B301D001BAF16 /* Resources */,
+				3132FFA7216B301D001BAF16 /* PBEnrollmentController.h */,
+				3132FFA8216B301D001BAF16 /* PBFingerPickerController.m */,
+				3132FFA9216B301D001BAF16 /* PBPractice1.xib */,
+				3132FFAA216B301D001BAF16 /* PBPractice1Controller.h */,
+				3132FFAB216B301D001BAF16 /* PBVerificationController.h */,
+				3132FFAC216B301D001BAF16 /* PBRotationTransparentNavigationController.h */,
+				3132FFAD216B301D001BAF16 /* PBPractice4.xib */,
+				3132FFAE216B301D001BAF16 /* PBPractice2Controller.m */,
+				3132FFAF216B301D001BAF16 /* PBConnectTactivoView.h */,
+				3132FFB0216B301D001BAF16 /* PBPracticeController.h */,
+				3132FFB1216B301D001BAF16 /* PBDisconnectionViewController.h */,
+				3132FFB2216B301D001BAF16 /* PBPracticeController.xib */,
+				3132FFB3216B301D001BAF16 /* PBFingerImageView.h */,
+				3132FFB4216B301D001BAF16 /* PBPractice3Controller.h */,
+				3132FFB5216B301D001BAF16 /* PBManageFingersController.h */,
+				3132FFB6216B301D001BAF16 /* ADD_REFERENCE_HERE.txt */,
+				3132FFB7216B301D001BAF16 /* PBSwipeFingerView.m */,
+				3132FFB8216B301D001BAF16 /* PBEnrollmentController.m */,
+				3132FFB9216B301D001BAF16 /* PBFingerPickerController.h */,
+				3132FFBA216B301D001BAF16 /* PBFingerPickerController.xib */,
+				3132FFBB216B301D001BAF16 /* PBPractice4Controller.m */,
+				3132FFBC216B301D001BAF16 /* PBBarImageView.h */,
+				3132FFBD216B301D001BAF16 /* PBReferenceDatabase.m */,
+				3132FFBE216B301D001BAF16 /* PBRotationTransparentNavigationController.m */,
+				3132FFBF216B301D001BAF16 /* PBVerificationController.xib */,
+				3132FFC0216B301D001BAF16 /* PBVerificationController.m */,
+				3132FFC1216B301D001BAF16 /* PBDisconnectionViewController.xib */,
+				3132FFC2216B301D001BAF16 /* PBManageFingersController.xib */,
+				3132FFC3216B301D001BAF16 /* PBEnrollmentController.xib */,
+				3132FFC4216B301D001BAF16 /* PBPractice1Controller.m */,
+			);
+			path = reference;
+			sourceTree = "<group>";
+		};
+		3132FF5E216B301D001BAF16 /* Smartcard */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF5F216B301D001BAF16 /* PBSmartcard7816.m */,
+				3132FF60216B301D001BAF16 /* PBSmartcardAppDelegate.m */,
+				3132FF61216B301D001BAF16 /* PBBioMatch3Database.h */,
+				3132FF62216B301D001BAF16 /* PBSmartcardIDStore.h */,
+				3132FF63216B301D001BAF16 /* PBSmartcardBioManagerContainer.m */,
+				3132FF64216B301D001BAF16 /* PBSmartcardIDStoreContainer.h */,
+				3132FF65216B301D001BAF16 /* PBBiomatch3Verifier.m */,
+				3132FF66216B301D001BAF16 /* PBSmartcardBioManager.m */,
+				3132FF67216B301D001BAF16 /* PBBioMatch3Database.m */,
+				3132FF68216B301D001BAF16 /* PBSmartcardIDStore.m */,
+				3132FF69216B301D001BAF16 /* PBSmartcardAppDelegate.h */,
+				3132FF6A216B301D001BAF16 /* PBSmartcard7816.h */,
+				3132FF6B216B301D001BAF16 /* PBSmartcardBioManagerContainer.h */,
+				3132FF6C216B301D001BAF16 /* PBSmartcardIDStoreContainer.m */,
+				3132FF6D216B301D001BAF16 /* PBSmartcardBioManager.h */,
+				3132FF6E216B301D001BAF16 /* PBBiomatch3Verifier.h */,
+			);
+			path = Smartcard;
+			sourceTree = "<group>";
+		};
+		3132FF79216B301D001BAF16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF7A216B301D001BAF16 /* practice_hand_inside.png */,
+				3132FF7B216B301D001BAF16 /* tab_practice@2x.png */,
+				3132FF7C216B301D001BAF16 /* practice_cross.png */,
+				3132FF7D216B301D001BAF16 /* key_add.png */,
+				3132FF7E216B301D001BAF16 /* right_index.png */,
+				3132FF7F216B301D001BAF16 /* tab_managefingers@2x.png */,
+				3132FF80216B301D001BAF16 /* arrow_right.png */,
+				3132FF81216B301D001BAF16 /* left_little.png */,
+				3132FF82216B301D001BAF16 /* practice_sensor.png */,
+				3132FF83216B301D001BAF16 /* arrow_left@2x.png */,
+				3132FF84216B301D001BAF16 /* key.png */,
+				3132FF85216B301D001BAF16 /* arrow_left.png */,
+				3132FF86216B301D001BAF16 /* shell.png */,
+				3132FF87216B301D001BAF16 /* connect_tactivo_iphone.png */,
+				3132FF88216B301D001BAF16 /* practice_hand_outside.png */,
+				3132FF89216B301D001BAF16 /* handprint_right.png */,
+				3132FF8A216B301D001BAF16 /* connect_tactivo_top.png */,
+				3132FF8B216B301D001BAF16 /* key_delete.png */,
+				3132FF8C216B301D001BAF16 /* right_little.png */,
+				3132FF8D216B301D001BAF16 /* left_index.png */,
+				3132FF8E216B301D001BAF16 /* Sounds */,
+				3132FF96216B301D001BAF16 /* handprint_left.png */,
+				3132FF97216B301D001BAF16 /* right_middle.png */,
+				3132FF98216B301D001BAF16 /* tab_managefingers.png */,
+				3132FF99216B301D001BAF16 /* redbackground.png */,
+				3132FF9A216B301D001BAF16 /* reject.png */,
+				3132FF9B216B301D001BAF16 /* practice_mark.png */,
+				3132FF9C216B301D001BAF16 /* left_thumb.png */,
+				3132FF9D216B301D001BAF16 /* phone.png */,
+				3132FF9E216B301D001BAF16 /* tab_practice.png */,
+				3132FF9F216B301D001BAF16 /* accept.png */,
+				3132FFA0216B301D001BAF16 /* right_thumb.png */,
+				3132FFA1216B301D001BAF16 /* left_ring.png */,
+				3132FFA2216B301D001BAF16 /* arrow_right@2x.png */,
+				3132FFA3216B301D001BAF16 /* left_middle.png */,
+				3132FFA4216B301D001BAF16 /* right_ring.png */,
+				3132FFA5216B301D001BAF16 /* connect_tactivo_bottom.png */,
+				3132FFA6216B301D001BAF16 /* greenbackground.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3132FF8E216B301D001BAF16 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3132FF8F216B301D001BAF16 /* PBVerificationRejected.wav */,
+				3132FF90216B301D001BAF16 /* PBSmartcardRemoved.wav */,
+				3132FF91216B301D001BAF16 /* PBAccessoryDisconnected.wav */,
+				3132FF92216B301D001BAF16 /* PBSmartcardInserted.wav */,
+				3132FF93216B301D001BAF16 /* PBSwipeFailed.wav */,
+				3132FF94216B301D001BAF16 /* PBVerificationAccepted.wav */,
+				3132FF95216B301D001BAF16 /* PBAccessoryConnected.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3132FF31216B2F66001BAF16 /* BiometrySampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3132FF44216B2F68001BAF16 /* Build configuration list for PBXNativeTarget "BiometrySampleSwift" */;
+			buildPhases = (
+				3132FF2E216B2F66001BAF16 /* Sources */,
+				3132FF2F216B2F66001BAF16 /* Frameworks */,
+				3132FF30216B2F66001BAF16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiometrySampleSwift;
+			productName = BiometrySampleSwift;
+			productReference = 3132FF32216B2F66001BAF16 /* BiometrySampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3132FF2A216B2F66001BAF16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Identos GmbH";
+				TargetAttributes = {
+					3132FF31216B2F66001BAF16 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 3132FF2D216B2F66001BAF16 /* Build configuration list for PBXProject "BiometrySampleSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3132FF29216B2F66001BAF16;
+			productRefGroup = 3132FF33216B2F66001BAF16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3132FF31216B2F66001BAF16 /* BiometrySampleSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3132FF30216B2F66001BAF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31320009216B301D001BAF16 /* PBPracticeController.xib in Resources */,
+				31320007216B301D001BAF16 /* PBPractice4.xib in Resources */,
+				31320002216B301D001BAF16 /* right_ring.png in Resources */,
+				3132FFC7216B301D001BAF16 /* ADD_HEADERS_HERE.txt in Resources */,
+				3132FF40216B2F68001BAF16 /* LaunchScreen.storyboard in Resources */,
+				3132FFFC216B301D001BAF16 /* tab_practice.png in Resources */,
+				3132FFDF216B301D001BAF16 /* arrow_right.png in Resources */,
+				3132FFEE216B301D001BAF16 /* PBSmartcardRemoved.wav in Resources */,
+				3132FFF6216B301D001BAF16 /* tab_managefingers.png in Resources */,
+				3132FFFE216B301D001BAF16 /* right_thumb.png in Resources */,
+				3132FFEA216B301D001BAF16 /* key_delete.png in Resources */,
+				3132FFE8216B301D001BAF16 /* handprint_right.png in Resources */,
+				3132FFED216B301D001BAF16 /* PBVerificationRejected.wav in Resources */,
+				3132FFFD216B301D001BAF16 /* accept.png in Resources */,
+				3132FFF5216B301D001BAF16 /* right_middle.png in Resources */,
+				3132FFE2216B301D001BAF16 /* arrow_left@2x.png in Resources */,
+				3132FFDE216B301D001BAF16 /* tab_managefingers@2x.png in Resources */,
+				31320000216B301D001BAF16 /* arrow_right@2x.png in Resources */,
+				3132FFFF216B301D001BAF16 /* left_ring.png in Resources */,
+				3132FFD8216B301D001BAF16 /* PBPractice2.xib in Resources */,
+				3132FFEB216B301D001BAF16 /* right_little.png in Resources */,
+				31320015216B301D001BAF16 /* PBEnrollmentController.xib in Resources */,
+				3132FFE9216B301D001BAF16 /* connect_tactivo_top.png in Resources */,
+				3132FFF1216B301D001BAF16 /* PBSwipeFailed.wav in Resources */,
+				3132FFEF216B301D001BAF16 /* PBAccessoryDisconnected.wav in Resources */,
+				3132FFE0216B301D001BAF16 /* left_little.png in Resources */,
+				31320014216B301D001BAF16 /* PBManageFingersController.xib in Resources */,
+				3132FFDD216B301D001BAF16 /* right_index.png in Resources */,
+				3132FFE5216B301D001BAF16 /* shell.png in Resources */,
+				3132FFDA216B301D001BAF16 /* tab_practice@2x.png in Resources */,
+				31320006216B301D001BAF16 /* PBPractice1.xib in Resources */,
+				3132FFE3216B301D001BAF16 /* key.png in Resources */,
+				3132FFF2216B301D001BAF16 /* PBVerificationAccepted.wav in Resources */,
+				31320013216B301D001BAF16 /* PBDisconnectionViewController.xib in Resources */,
+				31320011216B301D001BAF16 /* PBVerificationController.xib in Resources */,
+				3132FFD9216B301D001BAF16 /* practice_hand_inside.png in Resources */,
+				3132FFDC216B301D001BAF16 /* key_add.png in Resources */,
+				3132FFF4216B301D001BAF16 /* handprint_left.png in Resources */,
+				3132FFF0216B301D001BAF16 /* PBSmartcardInserted.wav in Resources */,
+				3132FFE6216B301D001BAF16 /* connect_tactivo_iphone.png in Resources */,
+				3132FFEC216B301D001BAF16 /* left_index.png in Resources */,
+				3132FFE1216B301D001BAF16 /* practice_sensor.png in Resources */,
+				3132FFF8216B301D001BAF16 /* reject.png in Resources */,
+				3132FFDB216B301D001BAF16 /* practice_cross.png in Resources */,
+				3132FF3D216B2F68001BAF16 /* Assets.xcassets in Resources */,
+				3132FFE7216B301D001BAF16 /* practice_hand_outside.png in Resources */,
+				3132000A216B301D001BAF16 /* ADD_REFERENCE_HERE.txt in Resources */,
+				3132FFF9216B301D001BAF16 /* practice_mark.png in Resources */,
+				31320004216B301D001BAF16 /* greenbackground.png in Resources */,
+				3132FFFA216B301D001BAF16 /* left_thumb.png in Resources */,
+				3132FFC5216B301D001BAF16 /* ADD_LIBRARY_HERE.txt in Resources */,
+				3132FFD6216B301D001BAF16 /* PBPractice3.xib in Resources */,
+				3132FF3B216B2F66001BAF16 /* Main.storyboard in Resources */,
+				31320001216B301D001BAF16 /* left_middle.png in Resources */,
+				3132FFFB216B301D001BAF16 /* phone.png in Resources */,
+				3132FFF7216B301D001BAF16 /* redbackground.png in Resources */,
+				3132000D216B301D001BAF16 /* PBFingerPickerController.xib in Resources */,
+				3132FFE4216B301D001BAF16 /* arrow_left.png in Resources */,
+				31320003216B301D001BAF16 /* connect_tactivo_bottom.png in Resources */,
+				3132FFF3216B301D001BAF16 /* PBAccessoryConnected.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3132FF2E216B2F66001BAF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31320008216B301D001BAF16 /* PBPractice2Controller.m in Sources */,
+				3132FFD1216B301D001BAF16 /* PBSmartcardIDStore.m in Sources */,
+				3132000B216B301D001BAF16 /* PBSwipeFingerView.m in Sources */,
+				3132FF38216B2F66001BAF16 /* ViewController.swift in Sources */,
+				3132FFD0216B301D001BAF16 /* PBBioMatch3Database.m in Sources */,
+				3132FFD7216B301D001BAF16 /* PBBarImageView.m in Sources */,
+				31320005216B301D001BAF16 /* PBFingerPickerController.m in Sources */,
+				3132FFCB216B301D001BAF16 /* PBSmartcard7816.m in Sources */,
+				3132FF36216B2F66001BAF16 /* AppDelegate.swift in Sources */,
+				3132FFD2216B301D001BAF16 /* PBSmartcardIDStoreContainer.m in Sources */,
+				3132001A216B3180001BAF16 /* VerifyFingerViewController.swift in Sources */,
+				3132FFD5216B301D001BAF16 /* PBPractice3Controller.m in Sources */,
+				3132FFCE216B301D001BAF16 /* PBBiomatch3Verifier.m in Sources */,
+				3132FFCF216B301D001BAF16 /* PBSmartcardBioManager.m in Sources */,
+				3132FFCC216B301D001BAF16 /* PBSmartcardAppDelegate.m in Sources */,
+				31320010216B301D001BAF16 /* PBRotationTransparentNavigationController.m in Sources */,
+				3132FFD3216B301D001BAF16 /* PBManageFingersController.m in Sources */,
+				3132FFD4216B301D001BAF16 /* PBFingerImageView.m in Sources */,
+				3132FFCD216B301D001BAF16 /* PBSmartcardBioManagerContainer.m in Sources */,
+				3132000E216B301D001BAF16 /* PBPractice4Controller.m in Sources */,
+				3132000C216B301D001BAF16 /* PBEnrollmentController.m in Sources */,
+				3132FFC9216B301D001BAF16 /* PBConnectTactivoView.m in Sources */,
+				3132000F216B301D001BAF16 /* PBReferenceDatabase.m in Sources */,
+				31320012216B301D001BAF16 /* PBVerificationController.m in Sources */,
+				3132FFC8216B301D001BAF16 /* PBDisconnectionViewController.m in Sources */,
+				31320016216B301D001BAF16 /* PBPractice1Controller.m in Sources */,
+				3132FFCA216B301D001BAF16 /* PBPracticeController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3132FF39216B2F66001BAF16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3132FF3A216B2F66001BAF16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3132FF3E216B2F68001BAF16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3132FF3F216B2F68001BAF16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3132FF42216B2F68001BAF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/src/BiometrySampleSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3132FF43216B2F68001BAF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/src/BiometrySampleSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3132FF45216B2F68001BAF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.BiometrySampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3132FF46216B2F68001BAF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J684S2VTXJ;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.BiometrySampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3132FF2D216B2F66001BAF16 /* Build configuration list for PBXProject "BiometrySampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3132FF42216B2F68001BAF16 /* Debug */,
+				3132FF43216B2F68001BAF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3132FF44216B2F68001BAF16 /* Build configuration list for PBXNativeTarget "BiometrySampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3132FF45216B2F68001BAF16 /* Debug */,
+				3132FF46216B2F68001BAF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3132FF2A216B2F66001BAF16 /* Project object */;
+}

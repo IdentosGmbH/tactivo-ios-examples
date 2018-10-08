@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7B0-wb-BxH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify finger-->
+        <scene sceneID="N8D-aT-5FD">
+            <objects>
+                <viewController id="YV6-eB-xLv" customClass="VerifyFingerViewController" customModule="BiometrySampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LXD-bC-C9A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Zq0-0m-ykU">
+                                <rect key="frame" x="16" y="80" width="63" height="111.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="575-xs-kFa">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-xu-Jcz">
+                                        <rect key="frame" x="0.0" y="45.5" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fingers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwN-5V-fla">
+                                        <rect key="frame" x="0.0" y="91" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Bz-Pa-1FE">
+                                <rect key="frame" x="95" y="80" width="264" height="112"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="lOx-Cn-pAW">
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="29"/>
+                                        <segments>
+                                            <segment title="3s"/>
+                                            <segment title="7.5s"/>
+                                            <segment title="Inf."/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="xlc-hR-jB7">
+                                        <rect key="frame" x="0.0" y="42" width="264" height="29"/>
+                                        <segments>
+                                            <segment title="Low"/>
+                                            <segment title="Medium"/>
+                                            <segment title="High"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-wM-cOH">
+                                        <rect key="frame" x="0.0" y="84" width="264" height="29"/>
+                                        <segments>
+                                            <segment title="All"/>
+                                            <segment title="One"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFT-h4-Q5U">
+                                <rect key="frame" x="147.5" y="208" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="YvA-tP-mGJ"/>
+                                </constraints>
+                                <state key="normal" title="Verify"/>
+                                <connections>
+                                    <action selector="verifyFinger:" destination="YV6-eB-xLv" eventType="touchUpInside" id="j3i-cs-5vr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zq0-0m-ykU" firstAttribute="leading" secondItem="wql-M2-XDA" secondAttribute="leading" constant="16" id="3rB-9N-MNF"/>
+                            <constraint firstItem="5Bz-Pa-1FE" firstAttribute="top" secondItem="wql-M2-XDA" secondAttribute="top" constant="16" id="68M-Vj-UhE"/>
+                            <constraint firstItem="5Bz-Pa-1FE" firstAttribute="leading" secondItem="Zq0-0m-ykU" secondAttribute="trailing" constant="16" id="Jf2-K6-VwN"/>
+                            <constraint firstItem="BFT-h4-Q5U" firstAttribute="centerX" secondItem="LXD-bC-C9A" secondAttribute="centerX" id="PLE-OV-D59"/>
+                            <constraint firstItem="BFT-h4-Q5U" firstAttribute="top" secondItem="5Bz-Pa-1FE" secondAttribute="bottom" constant="16" id="qC7-5t-nFe"/>
+                            <constraint firstItem="Zq0-0m-ykU" firstAttribute="top" secondItem="wql-M2-XDA" secondAttribute="top" constant="16" id="twX-Rm-wbS"/>
+                            <constraint firstItem="wql-M2-XDA" firstAttribute="trailing" secondItem="5Bz-Pa-1FE" secondAttribute="trailing" constant="16" id="uVq-1S-86g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wql-M2-XDA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Verify finger" id="CIJ-mS-OvR"/>
+                    <connections>
+                        <outlet property="fingersSegment" destination="zLd-wM-cOH" id="oFh-hA-WqW"/>
+                        <outlet property="securitySegment" destination="xlc-hR-jB7" id="lCx-ob-S6f"/>
+                        <outlet property="timeoutSegment" destination="lOx-Cn-pAW" id="731-Mj-VZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QiN-US-0Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.2" y="-742.5787106446777"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1mz-6z-vqK">
+            <objects>
+                <tabBarController id="7B0-wb-BxH" customClass="ViewController" customModule="BiometrySampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ztN-Bf-fqm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VHm-fD-xds" kind="relationship" relationship="viewControllers" id="xIv-d5-mW6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1at-T9-NSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59" y="-410"/>
+        </scene>
+        <!--Verify finger-->
+        <scene sceneID="GP2-sP-XQb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VHm-fD-xds" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Verify finger" image="fingerprint" id="Ymh-Qq-mhB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nzC-qI-pde">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YV6-eB-xLv" kind="relationship" relationship="rootViewController" id="4Be-0o-5Pp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ru-E1-vLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892" y="-742.5787106446777"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fingerprint" width="25" height="25"/>
+    </resources>
+</document>
